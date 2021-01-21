@@ -1114,6 +1114,14 @@ section {
     font-size: 1.5rem;
 }
 
+.like-wrap a {
+    display: none;
+}
+
+.like-wrap a.active {
+    display: block;
+}
+
 .like-wrap a:hover i,
 .like-wrap a:focus i {
     color: #f3963e;
@@ -2080,11 +2088,13 @@ figure.img-block .img-photo-slider div.active {
 }
 
 .product-wrap .size-wrap a {
-    margin-left: 10px;
-    padding: 5px 3px 3px;
+    margin-left: 5px;
+    padding: 2px 1px 1px;
     border: 1px solid #323232;
     background-color: #f7f7f7;
     color: #323232;
+    cursor: pointer;
+    font-size: 0.9rem;
 }
 
 .product-wrap .size-wrap a.active {

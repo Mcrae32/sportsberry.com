@@ -101,30 +101,39 @@ $(document).ready(function () {
 
     //buttons product-nav-dots
     let colorButtonsList = document.querySelectorAll(".product-nav-dots > a");
+    let sizeButtonsList = document.querySelectorAll(".size-wrap > a");
+
+    function showListImg(list) {
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener("click", function() {
+                let buttonList = this.parentNode.querySelectorAll("a");
+                for (let j = 0; j < buttonList.length; j++) {
+                    buttonList[j].classList.remove("active");
+                };
+                this.classList.add("active");
+
+                let dataColorA = this.getAttribute("data-color");
+
+                let listParentImgNav = this.parentNode.parentNode.parentNode.querySelectorAll(".image-photo-slider-nav");
+                
+                for (let k = 0; k < listParentImgNav.length; k++) {
+                    let dataColorImgWrapNav = listParentImgNav[k].getAttribute("data-color");
+                    if (dataColorImgWrapNav == dataColorA) {
+                        listParentImgNav[k].classList.add("active");
+                        let atrFirstImg = listParentImgNav[k].querySelector("div > img").getAttribute("data-src");
+                        let imagesTitleList = listParentImgNav[k].parentNode.querySelector(".img-photo-slider > div > img");
+                        imagesTitleList.src =  atrFirstImg;
+                    } else listParentImgNav[k].classList.remove("active");
+
+                }
+            });
+        };
+    };
+
+    showListImg(colorButtonsList);
+    showListImg(sizeButtonsList);
+
     
-    for (let i = 0; i < colorButtonsList.length; i++) {
-        colorButtonsList[i].addEventListener("click", function() {
-            let aList = this.parentNode.querySelectorAll("a");
-            for (let j = 0; j < aList.length; j++) {
-                aList[j].classList.remove("active");
-            };
-            this.classList.add("active");
-            let dataColorA = this.getAttribute("data-color");
-
-            let listParentImgNav = this.parentNode.parentNode.parentNode.querySelectorAll(".image-photo-slider-nav");
-            
-            for (let k = 0; k < listParentImgNav.length; k++) {
-                let dataColorImgWrapNav = listParentImgNav[k].getAttribute("data-color");
-                if (dataColorImgWrapNav == dataColorA) {
-                    listParentImgNav[k].classList.add("active");
-                    let atrFirstImg = listParentImgNav[k].querySelector("div > img").getAttribute("data-src");
-                    let imagesTitleList = listParentImgNav[k].parentNode.querySelector(".img-photo-slider > div > img");
-                    imagesTitleList.src =  atrFirstImg;
-                } else listParentImgNav[k].classList.remove("active");
-
-            }
-        });
-    }
     
 
     //sliders
