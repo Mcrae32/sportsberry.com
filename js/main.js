@@ -147,7 +147,6 @@ $(document).ready(function () {
     });
 
     
-
     var swiper = new Swiper('.new-items-slider', {
         spaceBetween: 15,
         slidesPerView: 1,
@@ -170,6 +169,7 @@ $(document).ready(function () {
             hide: true,
         },
     });
+
 
     /*superfish menu active*/
     // initialise plugin

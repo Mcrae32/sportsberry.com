@@ -377,7 +377,7 @@ header.sticky .logo img:last-child {
     transition: all .3s;
     position: relative;
     color: #323232;
-	font-weight: 100;
+	font-weight: 500;
 }
 
 .menu > li > a {
@@ -549,12 +549,20 @@ section {
     margin-bottom: 60px;
 }
 
+.slider-wrapper.position {
+    margin-bottom: 0;
+}
+
 .slider-wrapper .slider {
     display: flex;
     position: relative;
     /*height: 100vh;*/
     overflow: hidden;
     margin-top: 128px;
+}
+
+.slider-wrapper.position .slider {
+    margin-top: 147px;
 }
 
 .slider .intro {
@@ -681,6 +689,10 @@ section {
     margin-right: 10px;
 }
 
+.product-details .btn {
+    padding: 15px;
+}
+
 .btn:hover,
 .btn:focus,
 .btn.active,
@@ -771,7 +783,6 @@ section {
 #sport .slick-prev {
     background: url(../images/arrow-slider-prev.png) no-repeat center center;
     left: 5%;
-    
 }
 
 .slider-wrapper .slick-next,
@@ -780,6 +791,15 @@ section {
     right: 5%;
 }
 
+.slider-wrapper.position .slick-prev {
+    left: 1%;
+    top: calc(59% + 50px);
+}
+
+.slider-wrapper.position .slick-next {
+    right: 1%;
+    top: calc(59% + 50px);
+}
 
 /*types sport index page*/
 .slide-sport .block {
@@ -964,7 +984,9 @@ section {
     padding: 10% 0 12%;
 }
 
-.text-block p {
+.text-block p,
+.product-details p,
+.product-details span {
     line-height: 1.57;
     letter-spacing: 0.86px;
 	font-size: 1rem;
@@ -1654,10 +1676,6 @@ header.catalog-page {
     margin-right: 3.15vw;
 }
 
-.position .bread-crumbs-wrap {
-    border: none;
-}
-
 .breadcrumb {
     background-color: #fff;
     margin-bottom: 0;
@@ -1686,7 +1704,7 @@ header.catalog-page {
 }
 
 .page-content {
-	padding: .75rem 1rem;
+	padding: 1rem 1rem .75rem 1rem;
 }
 
 .sidebar {
@@ -1970,7 +1988,8 @@ label {
     align-content: stretch; 
 }
 
-.products {
+.products,
+.product-details-top {
     margin-top: 1rem;
 }
 
@@ -2019,7 +2038,8 @@ figure.img-block .img-photo-slider div.active {
    /* max-height: 290px;*/
 }
 
-.products .text-block .product-nav > span {
+.products .text-block .product-nav > span,
+.product-details .product-nav > span {
     display: inline-block;
     width: auto;
 }
@@ -2044,7 +2064,8 @@ figure.img-block .img-photo-slider div.active {
     align-items: center;
 }
 
-.product-wrap .product-nav {
+.product-wrap .product-nav,
+.product-details .product-nav {
     margin-top: 0rem;
     margin-bottom: .5rem;
 }
@@ -2087,7 +2108,8 @@ figure.img-block .img-photo-slider div.active {
     display: flex;
 }
 
-.product-wrap .size-wrap a {
+.product-wrap .size-wrap a,
+.product-details .size-wrap a {
     margin-left: 5px;
     padding: 2px 1px 1px;
     border: 1px solid #323232;
@@ -2097,7 +2119,8 @@ figure.img-block .img-photo-slider div.active {
     font-size: 0.9rem;
 }
 
-.product-wrap .size-wrap a.active {
+.product-wrap .size-wrap a.active,
+.product-details .size-wrap a.active {
     background-color: #323232;
     color: #fff;
 }
@@ -2105,6 +2128,16 @@ figure.img-block .img-photo-slider div.active {
 .buttons-wrap  {
     display: flex;
     padding-bottom: 5px;
+}
+
+.product-details .buttons-wrap  {
+    padding-bottom: 1rem;
+}
+
+.product-details .buttons-wrap i {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    margin-top: -2px;
 }
 
 .buttons-wrap button {
@@ -2154,7 +2187,7 @@ figure.img-block .img-photo-slider div.active {
     width: 100%;
 }
 
-.product-gallery-item img {
+.product-gallery-item .img-block img {
     max-width: none;
     width: 100%;
 }
@@ -2180,11 +2213,18 @@ figure.img-block .img-photo-slider div.active {
 
 .product-details h1 {
     margin-bottom: 1rem;
+    letter-spacing: 0.72px;
+    line-height: 1;
 }
 
 .product-content p,
 .page-content p {
     line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.product-content span {
+    color: #959595;
 }
 
 .product-details .action {
@@ -2195,17 +2235,6 @@ figure.img-block .img-photo-slider div.active {
 
 .product-details .action .btn.big {
     min-width: 180px;
-}
-
-.product-gallery-vertical a.product-gallery-item {
-    border: 1px solid #646464;
-	padding: 5px;
-}
-
-.product-gallery-vertical a.product-gallery-item:hover,
-.product-gallery-vertical a.product-gallery-item:focus,
-.product-gallery-vertical a.product-gallery-item.active {
-    border: 1px solid #f3963e;
 }
 
 .product-details-bottom h3 {
