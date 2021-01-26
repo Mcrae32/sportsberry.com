@@ -2233,6 +2233,12 @@ figure.img-block .img-photo-slider div.active {
     margin-bottom: 5%;
 }
 
+.product-details .product-nav a {
+    border-radius: 0;
+    width: 2.5rem;
+    height: auto;
+}
+
 .product-details .action .btn.big {
     min-width: 180px;
 }
@@ -2345,6 +2351,11 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 
 #catalog-menu-mobile, .bx-filter.mobile {
     margin-top: 4rem;
+}
+
+.nav-tabs {
+    border-bottom: solid 1px #d3cdcd;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -2461,6 +2472,24 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         height: 100%;
     }
 
+    .slider-wrapper.position .slider {
+        margin-top: 77px;
+    }
+
+    .slider-wrapper.position .slick-prev {
+        left: 1%;
+        top: calc(41% + 50px);
+    }
+
+    .slider-wrapper.position .slick-next {
+        right: 1%;
+        top: calc(41% + 50px);
+    }
+
+    .slider-wrapper .slider {
+        margin-top: 110px;
+    }
+
     .parthners {
         margin-top: 0rem;
     }
@@ -2571,7 +2600,6 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         position: relative;
         display: block;
         flex: 0 0 22%;
-        max-width: 25%;
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 1rem;
@@ -2599,12 +2627,21 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         text-align: center;
     }
 
+    .slider-wrapper.position {
+        display: none;
+    }
+
     .page-header {
         margin-top: 92px;
     }
 
+    .page-content {
+        padding: 3rem 1rem .75rem 1rem;
+    }
+
     .header-middle {
         flex-direction: column;
+        margin-bottom: 25px;
     }
 
     .slider-wrapper .slider {
