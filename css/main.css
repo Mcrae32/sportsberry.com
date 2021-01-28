@@ -2151,6 +2151,7 @@ figure.img-block .img-photo-slider div.active {
 .buttons-wrap button.basket {
     background: #323232;
     color: #fff;
+    margin-right: 0;
 }
 
 .buttons-wrap button.basket:hover,
@@ -2357,6 +2358,46 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     border-bottom: solid 1px #d3cdcd;
     margin-bottom: 20px;
 }
+
+.comment {
+    margin-top: 30px;
+    border-bottom: solid 1px #d3cdcd;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.comment .row {
+    margin-bottom: 5px;
+}
+
+#characteristics h6.name-user,
+#characteristics h6 {
+    font-weight: bold;
+}
+
+#characteristics h6.name-user {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#characteristics h6 {
+    font-weight: bold;
+}
+
+.data-rating {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.data-rating .data {
+    margin-right: 30px;
+}
+
+.data-rating .rating-wrap i {
+    line-height: 1.5rem;
+}
+
 
 @media (min-width: 1200px) {
     .wrapper{
@@ -2694,6 +2735,10 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 
     .product-details-bottom .text {
         column-count: 1;
+    }
+
+    .data-rating {
+        justify-content: flex-start;
     }
     
 }
