@@ -48,7 +48,7 @@ $(document).ready(function () {
     
     //Filter Toggle
     var $filterWrap = $('.widget .collapse');
-/*
+    /*
     $(window).resize(function(){
         var windowWidth = $('body').innerWidth();
         if ( windowWidth < 992 ) {
@@ -63,7 +63,7 @@ $(document).ready(function () {
         } 
     }
     checkWidth()
-*/
+    */
 
 
     //hover card assortment
@@ -243,6 +243,50 @@ $(document).ready(function () {
 
     
 
+    //scroll reviews
+    let buttonRating = document.querySelector(".scrollMore");
+    let navLinksList = document.querySelectorAll(".nav-link");
+    let tabsList = document.querySelectorAll(".tab-content .tab-pane");
+    
+    buttonRating.addEventListener("click", function() {
+        if ( buttonRating.classList.contains("active") ) {
+            return false;
+        } else {
+            for(let i = 0; i < navLinksList.length; i++) {
+                if( navLinksList[i].classList.contains("active") ) {
+                    navLinksList[i].classList.remove("active");
+                } else {
+                    navLinksList[i].classList.add("active");
+                }
+            }
+            for(let j = 0; j < tabsList.length; j++) {
+                if ( tabsList[j].classList.contains("active") ) {
+                    tabsList[j].classList.remove("active");
+                    tabsList[j].classList.remove("show")
+                } else {
+                    tabsList[j].classList.add("active");
+                    tabsList[j].classList.add("show");
+                    scrollToElement();
+                }
+            }
+        };
+        this.classList.add("active");
+        
+    })
+
+    function scrollToElement() {
+        element = document.getElementById("characteristics")
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
+    for (let i = 0; i < navLinksList.length; i++) {
+        navLinksList[i].addEventListener("click", function() {
+            buttonRating.classList.remove("active");
+        })
+    }
 });
 
 //show mobile menu and filter
@@ -267,3 +311,15 @@ $(document).ready(function() {
         $('.filter-wrap').removeClass('mobile_show');
     } )
 });
+
+//scroll
+// $(document).ready(function(){
+//     var $page = $('html, body');
+//     $('a[href*="#"]').click(function() {
+//         $page.animate({
+//             scrollTop: $($.attr(this, 'href')).offset().top
+//         }, 1800);
+//         return false;
+//     });
+// });
+

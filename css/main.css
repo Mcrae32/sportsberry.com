@@ -243,6 +243,10 @@ header.sticky .header-bottom .menu.sf-menu > li > a {
     margin: 0;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 .top-menu {
     margin: 0;
     position: relative;
@@ -2166,10 +2170,12 @@ figure.img-block .img-photo-slider div.active {
 
 .rating-wrap {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .rating-wrap i {
     margin-right: 5px;
+    line-height: 1.4rem;
 }
 
 .rating-wrap a {
@@ -2213,7 +2219,7 @@ figure.img-block .img-photo-slider div.active {
 }
 
 .product-details h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     letter-spacing: 0.72px;
     line-height: 1;
 }
@@ -2683,6 +2689,7 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     .header-middle {
         flex-direction: column;
         margin-bottom: 25px;
+        padding-bottom: 5px;
     }
 
     .slider-wrapper .slider {
@@ -2690,11 +2697,15 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     }
 
     .slider-wrapper .slick-next, .slider-wrapper .slick-prev, #sport .slick-next, #sport .slick-prev {
-        display: none;
+        display: none !important;
     }
 
     .banner {
         margin-bottom: 15px;
+    }
+
+    .position {
+        margin-top: 6rem;
     }
 
     .parthners {
@@ -2797,6 +2808,15 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 @media (max-width: 360px) {
     .parthners {
         margin-top: 0rem;
+    }
+
+    .search-toggle, .like, .bag {
+        margin-left: 5px;
+    }
+
+    .header-search .header-search-wrapper {
+        right: -0.3rem;
+        min-width: 137.1px;
     }
 }
 
