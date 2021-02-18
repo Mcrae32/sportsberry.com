@@ -40,6 +40,13 @@ h1 {
   color: #000;
 }
 
+aside h1 {
+    color: #323232;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #323232;
+}
+
 h3, .heading {
     color: #000;
     font-size: 1rem;
@@ -59,7 +66,7 @@ h3.heading-section, h4 {
 }
 
 h3, .heading {
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 img {
@@ -1249,6 +1256,32 @@ section {
     transform: translateY(-50%);
 }
 
+.product-wrap .text-block a.btn {
+    color: #323232;
+    font-size: 0.8rem;
+    padding: 13px 15px;
+    text-align: center;
+}
+
+.product-wrap .text-block a.btn.basket {
+    color: #fff;
+}
+
+.product-wrap .text-block a.btn:hover,
+.product-wrap .text-block a.btn:focus,
+.product-details .buttons-wrap a.btn:hover,
+.product-details .buttons-wrap a.btn:focus {
+    color: #fff;
+    border-color: #f3963e;
+}
+
+.product-wrap .text-block a.btn.basket:hover,
+.product-wrap .text-block a.btn.basket:focus,
+.product-details .buttons-wrap a.btn.basket:hover,
+.product-details .buttons-wrap a.btn.basket:focus {
+    border-color: #000;
+}
+
 /*about index page*/
 section.about {
     font-family: 'Conv_Roboto-Bold', sans-serif;
@@ -2144,7 +2177,8 @@ figure.img-block .img-photo-slider div.active {
     margin-top: -2px;
 }
 
-.buttons-wrap button {
+.buttons-wrap a.btn,
+.button-wrap a.btn {
     border: 1px solid #323232;
     border-radius: 50px;
     width: 50%;
@@ -2152,16 +2186,21 @@ figure.img-block .img-photo-slider div.active {
     font-weight: 500;
 }
 
-.buttons-wrap button.basket {
+.buttons-wrap a.basket {
     background: #323232;
     color: #fff;
     margin-right: 0;
 }
 
-.buttons-wrap button.basket:hover,
-.buttons-wrap button.basket:focus {
+.buttons-wrap a.basket:hover,
+.buttons-wrap a.basket:focus {
     background: #444;
     border-color: #444;
+}
+
+.button-wrap a.btn {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .rating-wrap .fa {
@@ -2182,6 +2221,11 @@ figure.img-block .img-photo-slider div.active {
     display: inline-block;
     margin-left: 10px;
     color: #323232;
+}
+
+.rating-wrap a:hover,
+.rating-wrap a:focus {
+    color: #f3963e;
 }
 
 /*position page*/

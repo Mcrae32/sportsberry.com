@@ -187,10 +187,15 @@
                 </div>
             </div>
         </header>
-        <main class="assortment-page">
-            <div class="page-header">
-                <h1>Футбол</h1>
+        <div class="slider-wrapper position">
+            <div class="slider">
+                <img class="bg-slid" src="images/position_bg.jpg" alt="torresball">
             </div>
+            <div class="slider">
+                <img class="bg-slid" src="images/position_bg.jpg" alt="torresball">
+            </div>
+        </div>
+        <main class="assortment-page">
             <div class="bread-crumbs-wrap">
                 <div class="container">
                     <div class="row">
@@ -198,8 +203,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Футбол</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Избранное</li>
                                 </ol>
                             </nav>
                         </div>
@@ -215,91 +219,9 @@
                                     <div class="col-sm-6 col-md-6 col-lg-4">
                                         <div class="product-wrap">
                                             <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                                </div>
-                                                <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/1.png"
-                                                            src="images/assortment/previews/1.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/2.png"
-                                                            src="images/assortment/previews/2.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/3.png"
-                                                            src="images/assortment/previews/3.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div data-color="2" class="img-wrap image-photo-slider-nav hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/4.png"
-                                                            src="images/assortment/previews/4.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/5.png"
-                                                            src="images/assortment/previews/5.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/6.png"
-                                                            src="images/assortment/previews/6.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="img-photo-slider">
-                                                    <div class="active">
-                                                        <img src="images/assortment/previews/1.png" alt="TORRES PRO">
-                                                    </div>
-                                                </div>
-                                            </figure>
-                                            <div class="text-block">
-                                                <a class="heading" href="/">Мяч футбольный TORRES T-Pro размер 5 арт.
-                                                    F31899</a>
-                                                <div><a href="/">Мячи футбольные</a></div>
-                                                <div class="rating-wrap hide">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    <a href="/">(11 отзывов)</a>
-                                                </div>
-                                                <div class="product-nav product-nav-dots hide">
-                                                    <span>Цвета:</span>
-                                                    <a class="active" data-color="1" style="background: #3391d8;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                    <a data-color="2" style="background: #999999;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                </div>
-                                                <div class="size-wrap hide">
-                                                    <span>Размеры:</span>
-                                                    <a data-color="1">36</a>
-                                                    <a data-color="2">37</a>
-                                                    <a data-color="1" class="active">39</a>
-                                                </div>
-                                                <p>4 999 ₽</p>
-                                                <div class="buttons-wrap"  style="display: block;">
-                                                    <a class="btn">Подробнее</a>
-                                                    <a class="btn basket">В корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-4">
-                                        <div class="product-wrap">
-                                            <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                                <div class="like-wrap nohide">
+                                                    <a href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a class="active" href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
                                                     <div>
@@ -373,15 +295,18 @@
                                                     <a class="btn">Подробнее</a>
                                                     <a class="btn basket">В корзину</a>
                                                 </div>
+                                                <div class="button-wrap hide">
+                                                    <a class="btn" href="/">Удалить из избранного</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-4">
                                         <div class="product-wrap">
                                             <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                                <div class="like-wrap nohide">
+                                                    <a href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a class="active" href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
                                                     <div>
@@ -455,15 +380,18 @@
                                                     <a class="btn">Подробнее</a>
                                                     <a class="btn basket">В корзину</a>
                                                 </div>
+                                                <div class="button-wrap hide">
+                                                    <a class="btn" href="/">Удалить из избранного</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-4">
                                         <div class="product-wrap">
                                             <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                                <div class="like-wrap nohide">
+                                                    <a href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a class="active" href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
                                                     <div>
@@ -537,169 +465,8 @@
                                                     <a class="btn">Подробнее</a>
                                                     <a class="btn basket">В корзину</a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-4">
-                                        <div class="product-wrap">
-                                            <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                                </div>
-                                                <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/1.png"
-                                                            src="images/assortment/previews/1.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/2.png"
-                                                            src="images/assortment/previews/2.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/3.png"
-                                                            src="images/assortment/previews/3.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div data-color="2" class="img-wrap image-photo-slider-nav hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/4.png"
-                                                            src="images/assortment/previews/4.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/5.png"
-                                                            src="images/assortment/previews/5.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/6.png"
-                                                            src="images/assortment/previews/6.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="img-photo-slider">
-                                                    <div class="active">
-                                                        <img src="images/assortment/previews/1.png" alt="TORRES PRO">
-                                                    </div>
-                                                </div>
-                                            </figure>
-                                            <div class="text-block">
-                                                <a class="heading" href="/">Мяч футбольный TORRES T-Pro размер 5 арт.
-                                                    F31899</a>
-                                                <div><a href="/">Мячи футбольные</a></div>
-                                                <div class="rating-wrap hide">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    <a href="/">(11 отзывов)</a>
-                                                </div>
-                                                <div class="product-nav product-nav-dots hide">
-                                                    <span>Цвета:</span>
-                                                    <a class="active" data-color="1" style="background: #3391d8;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                    <a data-color="2" style="background: #999999;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                </div>
-                                                <div class="size-wrap hide">
-                                                    <span>Размеры:</span>
-                                                    <a data-color="1">36</a>
-                                                    <a data-color="2">37</a>
-                                                    <a data-color="1" class="active">39</a>
-                                                </div>
-                                                <p>4 999 ₽</p>
-                                                <div class="buttons-wrap hide">
-                                                    <a class="btn">Подробнее</a>
-                                                    <a class="btn basket">В корзину</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-lg-4">
-                                        <div class="product-wrap">
-                                            <figure class="img-block">
-                                                <div class="like-wrap hide">
-                                                    <a class="active" href="/"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                                    <a href="/"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                                </div>
-                                                <div data-color="1" class="img-wrap image-photo-slider-nav active hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/1.png"
-                                                            src="images/assortment/previews/1.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/2.png"
-                                                            src="images/assortment/previews/2.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/3.png"
-                                                            src="images/assortment/previews/3.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div data-color="2" class="img-wrap image-photo-slider-nav hide">
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/4.png"
-                                                            src="images/assortment/previews/4.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/5.png"
-                                                            src="images/assortment/previews/5.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-fluid"
-                                                            data-src="images/assortment/previews/6.png"
-                                                            src="images/assortment/previews/6.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="img-photo-slider">
-                                                    <div class="active">
-                                                        <img src="images/assortment/previews/1.png" alt="TORRES PRO">
-                                                    </div>
-                                                </div>
-                                            </figure>
-                                            <div class="text-block">
-                                                <a class="heading" href="/">Мяч футбольный TORRES T-Pro размер 5 арт.
-                                                    F31899</a>
-                                                <div><a href="/">Мячи футбольные</a></div>
-                                                <div class="rating-wrap hide">
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                    <a href="/">(11 отзывов)</a>
-                                                </div>
-                                                <div class="product-nav product-nav-dots hide">
-                                                    <span>Цвета:</span>
-                                                    <a class="active" data-color="1" style="background: #3391d8;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                    <a data-color="2" style="background: #999999;">
-                                                        <span class="sr-only">Color name</span>
-                                                    </a>
-                                                </div>
-                                                <div class="size-wrap hide">
-                                                    <span>Размеры:</span>
-                                                    <a data-color="1">36</a>
-                                                    <a data-color="2">37</a>
-                                                    <a data-color="1" class="active">39</a>
-                                                </div>
-                                                <p>4 999 ₽</p>
-                                                <div class="buttons-wrap hide">
-                                                    <a class="btn">Подробнее</a>
-                                                    <a class="btn basket">В корзину</a>
+                                                <div class="button-wrap hide">
+                                                    <a class="btn" href="/">Удалить из избранного</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -735,6 +502,7 @@
                             </section>
                         </div>
                         <aside class="col-lg-3 order-first">
+                            <h1>Избранное</h1>
                             <div class="col d-block d-sm-block d-md-block d-lg-none">
                                 <!--Мобильная кнопка каталога-->
                                 <div class="mobile-button-wrap">
@@ -1070,199 +838,83 @@
                                 <div class="bx-filter mobile sidebar sidebar-shop">
                                     <form name="_form" action="/catalog/645/" method="get" class="smartfilter">
                                         <div class="widget widget-collapsible">
-                                            <h3 class="widget-title">
-                                                <a data-toggle="collapse" href="#widget-81" role="button" aria-expanded="true" aria-controls="widget-81">
-                                                    Уровень<i class="mmenu-btn fa fa-angle-down"></i>
-                                                    <i class="mmenu-btn fa fa-angle-up"></i>
-                                                </a>
-                                                <span class="bx-filter-container-modef"></span>
-                                            </h3>
+                                            <h3 class="widget-title"><p>Списки товаров</p></h3>
                                             <div class="collapse show" id="widget-81">
                                                 <div class="widget-body">
                                                     <div class="col-xs-12 filter-items filter-items-count">
                                                         <div class="filter-item">
                                                             <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_81_4252452532" id="SMART_FILTER_81_4252452532" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_81_4252452532" class="form-check-label bx-filter-param-label " for="SMART_FILTER_81_4252452532">
-                                                                    Любительский
+                                                                <input class="form-check-input" type="checkbox" value="Y"
+                                                                    name="SMART_FILTER_81_4252452532"
+                                                                    id="SMART_FILTER_81_4252452532"
+                                                                    onclick="smartFilter.click(this)" checked>
+                                                                <label data-role="label_SMART_FILTER_81_4252452532"
+                                                                    class="form-check-label bx-filter-param-label "
+                                                                    for="SMART_FILTER_81_4252452532">
+                                                                    Все товары
                                                                 </label>
                                                             </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_81_4252452532">5</span>
                                                         </div>
                                                         <div class="filter-item">
                                                             <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_81_2272098024" id="SMART_FILTER_81_2272098024" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_81_2272098024" class="form-check-label bx-filter-param-label " for="SMART_FILTER_81_2272098024">
-                                                                    Матчевый
+                                                                <input class="form-check-input" type="checkbox" value="Y"
+                                                                    name="SMART_FILTER_81_2272098024"
+                                                                    id="SMART_FILTER_81_2272098024"
+                                                                    onclick="smartFilter.click(this)">
+                                                                <label data-role="label_SMART_FILTER_81_2272098024"
+                                                                    class="form-check-label bx-filter-param-label "
+                                                                    for="SMART_FILTER_81_2272098024">
+                                                                    Просмотренные товары
                                                                 </label>
                                                             </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_81_2272098024">7</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_81_509880146" id="SMART_FILTER_81_509880146" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_81_509880146" class="form-check-label bx-filter-param-label " for="SMART_FILTER_81_509880146">
-                                                                    Тренировочный
-                                                                </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_81_509880146">13</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="widget widget-collapsible">
-                                            <h3 class="widget-title">
-                                                <a data-toggle="collapse" href="#widget-83" role="button" aria-expanded="true" aria-controls="widget-83">
-                                                    Размер <i class="mmenu-btn fa fa-angle-down"></i>
-                                                    <i class="mmenu-btn fa fa-angle-up"></i>
-                                                </a>
-                                                <span class="bx-filter-container-modef"></span>
-                                            </h3>
-                                            <div class="collapse show" id="widget-83">
+                                            <h3 class="widget-title"><p>Наличие товаров</p></h3>
+                                            <div class="collapse show" id="widget-81">
                                                 <div class="widget-body">
                                                     <div class="col-xs-12 filter-items filter-items-count">
                                                         <div class="filter-item">
                                                             <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_83_326707096" id="SMART_FILTER_83_326707096" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_83_326707096" class="form-check-label bx-filter-param-label " for="SMART_FILTER_83_326707096">
-                                                                    0 </label>
+                                                                <input class="form-check-input" type="checkbox" value="Y"
+                                                                    name="SMART_FILTER_81_4252452532"
+                                                                    id="SMART_FILTER_81_4252452532"
+                                                                    onclick="smartFilter.click(this)" checked>
+                                                                <label data-role="label_SMART_FILTER_81_4252452532"
+                                                                    class="form-check-label bx-filter-param-label "
+                                                                    for="SMART_FILTER_81_4252452532">
+                                                                    Не важно
+                                                                </label>
                                                             </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_83_326707096">1</span>
                                                         </div>
                                                         <div class="filter-item">
                                                             <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_83_1106667350" id="SMART_FILTER_83_1106667350" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_83_1106667350" class="form-check-label bx-filter-param-label " for="SMART_FILTER_83_1106667350">
-                                                                    1 </label>
+                                                                <input class="form-check-input" type="checkbox" value="Y"
+                                                                    name="SMART_FILTER_81_2272098024"
+                                                                    id="SMART_FILTER_81_2272098024"
+                                                                    onclick="smartFilter.click(this)">
+                                                                <label data-role="label_SMART_FILTER_81_2272098024"
+                                                                    class="form-check-label bx-filter-param-label "
+                                                                    for="SMART_FILTER_81_2272098024">
+                                                                    В наличии
+                                                                </label>
                                                             </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_83_1106667350">1</span>
                                                         </div>
                                                         <div class="filter-item">
                                                             <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_83_3864289797" id="SMART_FILTER_83_3864289797" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_83_3864289797" class="form-check-label bx-filter-param-label " for="SMART_FILTER_83_3864289797">
-                                                                    3 </label>
+                                                                <input class="form-check-input" type="checkbox" value="Y"
+                                                                    name="SMART_FILTER_81_2272098024"
+                                                                    id="SMART_FILTER_81_2272098024"
+                                                                    onclick="smartFilter.click(this)">
+                                                                <label data-role="label_SMART_FILTER_81_2272098024"
+                                                                    class="form-check-label bx-filter-param-label "
+                                                                    for="SMART_FILTER_81_2272098024">
+                                                                    Не в наличии
+                                                                </label>
                                                             </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_83_3864289797">2</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_83_2438156947" id="SMART_FILTER_83_2438156947" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_83_2438156947" class="form-check-label bx-filter-param-label " for="SMART_FILTER_83_2438156947">
-                                                                    4 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_83_2438156947">7</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_83_1889509032" id="SMART_FILTER_83_1889509032" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_83_1889509032" class="form-check-label bx-filter-param-label " for="SMART_FILTER_83_1889509032">
-                                                                    5 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_83_1889509032">14</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget widget-collapsible">
-                                            <h3 class="widget-title">
-                                                <a data-toggle="collapse" href="#widget-86" role="button" aria-expanded="true" aria-controls="widget-86">
-                                                    Количество панелей <i class="mmenu-btn fa fa-angle-down"></i>
-                                                    <i class="mmenu-btn fa fa-angle-up"></i>
-                                                </a>
-                                                <span class="bx-filter-container-modef"></span>
-                                            </h3>
-                                            <div class="collapse show" id="widget-86">
-                                                <div class="widget-body">
-                                                    <div class="col-xs-12 filter-items filter-items-count">
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_1568960705" id="SMART_FILTER_86_1568960705" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_1568960705" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_1568960705">
-                                                                    10 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_1568960705">1</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_3012170221" id="SMART_FILTER_86_3012170221" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_3012170221" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_3012170221">
-                                                                    12 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_3012170221">2</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_1923582808" id="SMART_FILTER_86_1923582808" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_1923582808" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_1923582808">
-                                                                    14 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_1923582808">2</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_1213398089" id="SMART_FILTER_86_1213398089" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_1213398089" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_1213398089">
-                                                                    16 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_1213398089">4</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_2675092570" id="SMART_FILTER_86_2675092570" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_2675092570" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_2675092570">
-                                                                    28 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_2675092570">1</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_86_3447271878" id="SMART_FILTER_86_3447271878" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_86_3447271878" class="form-check-label bx-filter-param-label " for="SMART_FILTER_86_3447271878">
-                                                                    32 </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_86_3447271878">15</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget widget-collapsible">
-                                            <h3 class="widget-title">
-                                                <a data-toggle="collapse" href="#widget-87" role="button" aria-expanded="true" aria-controls="widget-87">
-                                                    Материал покрышки <i class="mmenu-btn fa fa-angle-down"></i>
-                                                    <i class="mmenu-btn fa fa-angle-up"></i>
-                                                </a>
-                                                <span class="bx-filter-container-modef"></span>
-                                            </h3>
-                                            <div class="collapse show" id="widget-87">
-                                                <div class="widget-body">
-                                                    <div class="col-xs-12 filter-items filter-items-count">
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_87_3972210427" id="SMART_FILTER_87_3972210427" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_87_3972210427" class="form-check-label bx-filter-param-label " for="SMART_FILTER_87_3972210427">
-                                                                    Резина </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_87_3972210427">2</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_87_605721843" id="SMART_FILTER_87_605721843" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_87_605721843" class="form-check-label bx-filter-param-label " for="SMART_FILTER_87_605721843">
-                                                                    Синт. кожа (полиуретан) </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_87_605721843">20</span>
-                                                        </div>
-                                                        <div class="filter-item">
-                                                            <div class="checkbox form-check">
-                                                                <input class="form-check-input" type="checkbox" value="Y" name="SMART_FILTER_87_336913281" id="SMART_FILTER_87_336913281" onclick="smartFilter.click(this)">
-                                                                <label data-role="label_SMART_FILTER_87_336913281" class="form-check-label bx-filter-param-label " for="SMART_FILTER_87_336913281">
-                                                                    Синт. кожа (термополиуретан) </label>
-                                                            </div>
-                                                            <span class="item-count" data-role="count_SMART_FILTER_87_336913281">3</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1287,92 +939,12 @@
     
                                 </div>
                             </div>
-
-                            <div class="sidebar sidebar-shop d-none d-sm-none d-md-none d-lg-block">
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-1" role="button" aria-expanded="true"
-                                            aria-controls="widget-1">
-                                            Футбол<i class="mmenu-btn fa fa-angle-down"></i><i
-                                                class="mmenu-btn fa fa-angle-up"></i>
-                                        </a>
-                                    </h3>
-                                    <div class="collapse show" id="widget-1">
-                                        <div class="widget-body">
-                                            <div class="filter-items filter-items-count">
-                                                <div class="filter-item">
-                                                    <div>
-                                                        <a href="/">Мячи футбольные</a>
-                                                    </div>
-                                                    <span class="item-count">3</span>
-                                                </div><!-- End .filter-item -->
-                                                <div class="filter-item">
-                                                    <div>
-                                                        <a href="/">Экипировка</a>
-                                                    </div>
-                                                    <span class="item-count">5</span>
-                                                </div><!-- End .filter-item -->
-                                                <div class="filter-item">
-                                                    <div>
-                                                        <a data-toggle="collapse" href="#widget-1-1" role="button"
-                                                            aria-expanded="true" aria-controls="widget-1-1">
-                                                            Аксессуары
-                                                        </a>
-                                                    </div>
-                                                    <span class="item-count">10</span>
-                                                    <div class="collapse" id="widget-1-1">
-                                                        <div class="widget-body">
-                                                            <div class="filter-items filter-items-count">
-                                                                <div class="filter-item">
-                                                                    <div>
-                                                                        <a href="/">Сетки футбольные</a>
-                                                                    </div>
-                                                                    <span class="item-count">3</span>
-                                                                </div><!-- End .filter-item -->
-                                                                <div class="filter-item">
-                                                                    <div>
-                                                                        <a href="/">Сетки и гасители футзальные</a>
-                                                                    </div>
-                                                                    <span class="item-count">5</span>
-                                                                </div><!-- End .filter-item -->
-                                                                <div class="filter-item">
-                                                                    <div>
-                                                                        <a href="/">Тренировочный инвентарь</a>
-                                                                    </div>
-                                                                    <span class="item-count">3</span>
-                                                                </div><!-- End .filter-item -->
-                                                                <div class="filter-item">
-                                                                    <div>
-                                                                        <a href="/">Аксессуары для мячей (насосы, иглы и
-                                                                            др.)</a>
-                                                                    </div>
-                                                                    <span class="item-count">5</span>
-                                                                </div><!-- End .filter-item -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div><!-- End .filter-item -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            
                             <div class="bx-filter sidebar sidebar-shop d-none d-sm-none d-md-none d-lg-block">
-                                <div class="widget widget-clean">
-                                    <label>Фильтры:</label> <a href="#" class="sidebar-filter-clear"
-                                        onclick="$('#del_filter').click();">Очистить всё</a>
-                                </div>
+                                
                                 <form name="_form" action="/catalog/645/" method="get" class="smartfilter">
                                     <div class="widget widget-collapsible">
-                                        <h3 class="widget-title">
-                                            <a data-toggle="collapse" href="#widget-81" role="button"
-                                                aria-expanded="true" aria-controls="widget-81">
-                                                Уровень<i class="mmenu-btn fa fa-angle-down"></i>
-                                                <i class="mmenu-btn fa fa-angle-up"></i>
-                                            </a>
-                                            <span class="bx-filter-container-modef"></span>
-                                        </h3>
+                                        <h3 class="widget-title"><p>Списки товаров</p></h3>
                                         <div class="collapse show" id="widget-81">
                                             <div class="widget-body">
                                                 <div class="col-xs-12 filter-items filter-items-count">
@@ -1381,15 +953,13 @@
                                                             <input class="form-check-input" type="checkbox" value="Y"
                                                                 name="SMART_FILTER_81_4252452532"
                                                                 id="SMART_FILTER_81_4252452532"
-                                                                onclick="smartFilter.click(this)">
+                                                                onclick="smartFilter.click(this)" checked>
                                                             <label data-role="label_SMART_FILTER_81_4252452532"
                                                                 class="form-check-label bx-filter-param-label "
                                                                 for="SMART_FILTER_81_4252452532">
-                                                                Любительский
+                                                                Все товары
                                                             </label>
                                                         </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_81_4252452532">5</span>
                                                     </div>
                                                     <div class="filter-item">
                                                         <div class="checkbox form-check">
@@ -1400,276 +970,63 @@
                                                             <label data-role="label_SMART_FILTER_81_2272098024"
                                                                 class="form-check-label bx-filter-param-label "
                                                                 for="SMART_FILTER_81_2272098024">
-                                                                Матчевый
+                                                                Просмотренные товары
                                                             </label>
                                                         </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_81_2272098024">7</span>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget widget-collapsible">
+                                        <h3 class="widget-title"><p>Наличие товаров</p></h3>
+                                        <div class="collapse show" id="widget-81">
+                                            <div class="widget-body">
+                                                <div class="col-xs-12 filter-items filter-items-count">
                                                     <div class="filter-item">
                                                         <div class="checkbox form-check">
                                                             <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_81_509880146"
-                                                                id="SMART_FILTER_81_509880146"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_81_509880146"
+                                                                name="SMART_FILTER_81_4252452532"
+                                                                id="SMART_FILTER_81_4252452532"
+                                                                onclick="smartFilter.click(this)" checked>
+                                                            <label data-role="label_SMART_FILTER_81_4252452532"
                                                                 class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_81_509880146">
-                                                                Тренировочный
+                                                                for="SMART_FILTER_81_4252452532">
+                                                                Не важно
                                                             </label>
                                                         </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_81_509880146">13</span>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <div class="checkbox form-check">
+                                                            <input class="form-check-input" type="checkbox" value="Y"
+                                                                name="SMART_FILTER_81_2272098024"
+                                                                id="SMART_FILTER_81_2272098024"
+                                                                onclick="smartFilter.click(this)">
+                                                            <label data-role="label_SMART_FILTER_81_2272098024"
+                                                                class="form-check-label bx-filter-param-label "
+                                                                for="SMART_FILTER_81_2272098024">
+                                                                В наличии
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-item">
+                                                        <div class="checkbox form-check">
+                                                            <input class="form-check-input" type="checkbox" value="Y"
+                                                                name="SMART_FILTER_81_2272098024"
+                                                                id="SMART_FILTER_81_2272098024"
+                                                                onclick="smartFilter.click(this)">
+                                                            <label data-role="label_SMART_FILTER_81_2272098024"
+                                                                class="form-check-label bx-filter-param-label "
+                                                                for="SMART_FILTER_81_2272098024">
+                                                                Не в наличии
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="widget widget-collapsible">
-                                        <h3 class="widget-title">
-                                            <a data-toggle="collapse" href="#widget-83" role="button"
-                                                aria-expanded="true" aria-controls="widget-83">
-                                                Размер <i class="mmenu-btn fa fa-angle-down"></i>
-                                                <i class="mmenu-btn fa fa-angle-up"></i>
-                                            </a>
-                                            <span class="bx-filter-container-modef"></span>
-                                        </h3>
-                                        <div class="collapse show" id="widget-83">
-                                            <div class="widget-body">
-                                                <div class="col-xs-12 filter-items filter-items-count">
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_83_326707096"
-                                                                id="SMART_FILTER_83_326707096"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_83_326707096"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_83_326707096">
-                                                                0 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_83_326707096">1</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_83_1106667350"
-                                                                id="SMART_FILTER_83_1106667350"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_83_1106667350"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_83_1106667350">
-                                                                1 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_83_1106667350">1</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_83_3864289797"
-                                                                id="SMART_FILTER_83_3864289797"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_83_3864289797"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_83_3864289797">
-                                                                3 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_83_3864289797">2</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_83_2438156947"
-                                                                id="SMART_FILTER_83_2438156947"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_83_2438156947"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_83_2438156947">
-                                                                4 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_83_2438156947">7</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_83_1889509032"
-                                                                id="SMART_FILTER_83_1889509032"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_83_1889509032"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_83_1889509032">
-                                                                5 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_83_1889509032">14</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget widget-collapsible">
-                                        <h3 class="widget-title">
-                                            <a data-toggle="collapse" href="#widget-86" role="button"
-                                                aria-expanded="true" aria-controls="widget-86">
-                                                Количество панелей <i class="mmenu-btn fa fa-angle-down"></i>
-                                                <i class="mmenu-btn fa fa-angle-up"></i>
-                                            </a>
-                                            <span class="bx-filter-container-modef"></span>
-                                        </h3>
-                                        <div class="collapse show" id="widget-86">
-                                            <div class="widget-body">
-                                                <div class="col-xs-12 filter-items filter-items-count">
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_1568960705"
-                                                                id="SMART_FILTER_86_1568960705"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_1568960705"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_1568960705">
-                                                                10 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_1568960705">1</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_3012170221"
-                                                                id="SMART_FILTER_86_3012170221"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_3012170221"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_3012170221">
-                                                                12 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_3012170221">2</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_1923582808"
-                                                                id="SMART_FILTER_86_1923582808"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_1923582808"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_1923582808">
-                                                                14 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_1923582808">2</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_1213398089"
-                                                                id="SMART_FILTER_86_1213398089"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_1213398089"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_1213398089">
-                                                                16 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_1213398089">4</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_2675092570"
-                                                                id="SMART_FILTER_86_2675092570"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_2675092570"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_2675092570">
-                                                                28 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_2675092570">1</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_86_3447271878"
-                                                                id="SMART_FILTER_86_3447271878"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_86_3447271878"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_86_3447271878">
-                                                                32 </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_86_3447271878">15</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget widget-collapsible">
-                                        <h3 class="widget-title">
-                                            <a data-toggle="collapse" href="#widget-87" role="button"
-                                                aria-expanded="true" aria-controls="widget-87">
-                                                Материал покрышки <i class="mmenu-btn fa fa-angle-down"></i>
-                                                <i class="mmenu-btn fa fa-angle-up"></i>
-                                            </a>
-                                            <span class="bx-filter-container-modef"></span>
-                                        </h3>
-                                        <div class="collapse show" id="widget-87">
-                                            <div class="widget-body">
-                                                <div class="col-xs-12 filter-items filter-items-count">
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_87_3972210427"
-                                                                id="SMART_FILTER_87_3972210427"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_87_3972210427"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_87_3972210427">
-                                                                Резина </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_87_3972210427">2</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_87_605721843"
-                                                                id="SMART_FILTER_87_605721843"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_87_605721843"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_87_605721843">
-                                                                Синт. кожа (полиуретан) </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_87_605721843">20</span>
-                                                    </div>
-                                                    <div class="filter-item">
-                                                        <div class="checkbox form-check">
-                                                            <input class="form-check-input" type="checkbox" value="Y"
-                                                                name="SMART_FILTER_87_336913281"
-                                                                id="SMART_FILTER_87_336913281"
-                                                                onclick="smartFilter.click(this)">
-                                                            <label data-role="label_SMART_FILTER_87_336913281"
-                                                                class="form-check-label bx-filter-param-label "
-                                                                for="SMART_FILTER_87_336913281">
-                                                                Синт. кожа (термополиуретан) </label>
-                                                        </div>
-                                                        <span class="item-count"
-                                                            data-role="count_SMART_FILTER_87_336913281">3</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                   
                                     <div class="col-xs-12 bx-filter-button-box">
                                         <div class="bx-filter-block">
                                             <div class="bx-filter-parameters-box-container">
