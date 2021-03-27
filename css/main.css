@@ -116,6 +116,10 @@ header {
     padding-right: 3.15vw;*/
 }
 
+header.static {
+    position: relative;
+}
+
 header.sticky.scroll-down {
     top: -203px;
 }
@@ -569,11 +573,11 @@ section {
     position: relative;
     /*height: 100vh;*/
     overflow: hidden;
-    margin-top: 128px;
+    /* margin-top: 128px; */
 }
 
 .slider-wrapper.position .slider {
-    margin-top: 147px;
+    /* margin-top: 147px; */
 }
 
 .slider .intro {
@@ -786,7 +790,7 @@ section {
     width: 21px;
     height: 40px;
     z-index: 2;
-    top: calc(58% + 20px);
+    top: calc(50% + 0px);
 }
 
 #sport .slick-next,
@@ -808,12 +812,12 @@ section {
 
 .slider-wrapper.position .slick-prev {
     left: 1%;
-    top: calc(59% + 50px);
+    top: calc(50% + 0px);
 }
 
 .slider-wrapper.position .slick-next {
     right: 1%;
-    top: calc(59% + 50px);
+    top: calc(50% + 0px);
 }
 
 /*types sport index page*/
@@ -1671,6 +1675,8 @@ button:focus {
     flex-direction: column;
     min-height: 100%;
     transition: transform 0.4s ease;
+
+    padding-top: 147px;
 }
 
 
@@ -1720,7 +1726,7 @@ header.catalog-page {
     justify-content: center;
     align-items: center;
     min-height: 100px;
-    margin-top: 147px;
+    /* margin-top: 147px; */
     position: relative;
     margin-left: 3.15vw;
     margin-right: 3.15vw;
@@ -2546,6 +2552,10 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     font-size: 1.05rem;
 }
 
+.payment-wrap {
+
+}
+
 @media (min-width: 1200px) {
     .wrapper{
         margin-left: 2%;
@@ -2666,9 +2676,9 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         height: 100%;
     }
 
-    .slider-wrapper.position .slider {
+    /* .slider-wrapper.position .slider {
         margin-top: 77px;
-    }
+    } */
 
     .slider-wrapper.position .slick-prev {
         left: 1%;
@@ -2680,8 +2690,11 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         top: calc(41% + 50px);
     }
 
-    .slider-wrapper .slider {
+    /* .slider-wrapper .slider {
         margin-top: 110px;
+    } */
+    .page-wrapper {
+        padding-top: 110px;
     }
 
     .parthners {
@@ -2692,9 +2705,9 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         /*display: none;*/
     }
 
-    .page-header {
+    /* .page-header {
         margin-top: 60px;
-    }
+    } */
 
     .top-menu:not(.top-link-menu)>div {
         min-width: 141px;
@@ -2829,9 +2842,9 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         display: none;
     }
 
-    .page-header {
+    /* .page-header {
         margin-top: 92px;
-    }
+    } */
 
     .page-content {
         padding: 3rem 1rem .75rem 1rem;
@@ -2843,8 +2856,11 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         padding-bottom: 5px;
     }
 
-    .slider-wrapper .slider {
+    /* .slider-wrapper .slider {
         margin-top: 110px;
+    } */
+    .page-wrapper {
+        padding-top: 110px;
     }
 
     .slider-wrapper .slick-next, .slider-wrapper .slick-prev, #sport .slick-next, #sport .slick-prev {
@@ -2855,9 +2871,9 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         margin-bottom: 15px;
     }
 
-    .position {
+    /* .position {
         margin-top: 6rem;
-    }
+    } */
 
     .parthners {
         margin-top: 0rem;
