@@ -497,6 +497,10 @@ header.sticky .logo img:last-child {
     font-size: 1.5rem;
 }
 
+i.fa.fa-heart-o.active:before {
+    content: "\f004";
+}
+
 .header-search form {
 	margin: 0;
 }
@@ -1106,11 +1110,6 @@ section {
     display: none;
 }
 
-.hide {
-    opacity: 0;
-    display: none !important;
-}
-
 .show {
     opacity: 1;
     display: block;
@@ -1188,6 +1187,11 @@ section {
     right: 1rem;
 }
 
+.like-wrap.hide.active {
+    display: flex;
+    opacity: 1;
+}
+
 .like-wrap  i.fa {
     color: #323232;
     font-size: 1.5rem;
@@ -1242,6 +1246,8 @@ section {
     padding: 25px 15px 30px;
     max-height: 395px;
 }
+
+
 
 
 .product-wrap .text-block p {
@@ -2217,7 +2223,7 @@ figure.img-block .img-photo-slider div.active {
     border: 0;
 }
 
-.product-wrap .size-wrap {
+.size-wrap {
     display: flex;
 }
 
@@ -2554,6 +2560,11 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 
 .payment-wrap {
 
+}
+
+.hide {
+    opacity: 0;
+    display: none;
 }
 
 @media (min-width: 1200px) {

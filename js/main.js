@@ -92,6 +92,32 @@ $(document).ready(function () {
         $(this).find('.buttons-wrap').addClass('hide');
         $(this).find('.button-wrap').addClass('hide');
     };
+
+    //click like position
+    $('.product-wrap .like-wrap a').on('click', function (e) {
+        e.preventDefault(); 
+    });
+
+    $(function () {
+        $('.product-wrap .like-wrap a').click(clickIn);        
+    });
+
+    function clickIn() {        
+        $(this).parent().children("a").addClass('active');
+        $(this).removeClass('active');
+        // if ( $(this).parent().hasClass("active") {
+        //     $(this).parent().removeClass('active');
+        // } ) else {
+        //     $(this).parent().addClass('active');
+        // }
+        
+        if ( $(this).parent().hasClass("active") ) {
+            $(this).parent().removeClass('active');
+        } else {
+            $(this).parent().addClass('active');
+        }
+    };
+
     
     //card assortment new scropt
     let imgNavList = document.querySelectorAll(".image-photo-slider-nav > div > img");
