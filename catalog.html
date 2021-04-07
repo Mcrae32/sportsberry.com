@@ -27,7 +27,26 @@
         <header class="header if-s">
             <div class="header-top">
                 <div class="top-menu">
-                    <div><a href="/">Помощь</a></div>
+                    <div class="dropdown">
+                        <a class="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/">Информация<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a href="/">О нас</a>
+                            </li>
+                            <li>
+                                <a href="/">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="/">Поддержка</a>
+                            </li>
+                            <li>
+                                <a href="/">Где купить</a>
+                            </li>
+                            <li>
+                                <a href="/">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div><a href="/">Регистрация</a></div>
                     <div><a href="/">Вход</a></div>                            
                 </div>
@@ -269,10 +288,13 @@
                                                 </div>
                                                 <div class="product-nav product-nav-dots hide">
                                                     <span>Цвета:</span>
-                                                    <a class="active" data-color="1" style="background: #3391d8;">
+                                                    <a data-color="1" style="background: #fff;">
                                                         <span class="sr-only">Color name</span>
                                                     </a>
-                                                    <a data-color="2" style="background: #999999;">
+                                                    <a class="active" data-color="2" style="background: #3391d8;">
+                                                        <span class="sr-only">Color name</span>
+                                                    </a>
+                                                    <a data-color="3" style="background: #999999;">
                                                         <span class="sr-only">Color name</span>
                                                     </a>
                                                 </div>
