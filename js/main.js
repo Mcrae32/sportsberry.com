@@ -125,8 +125,11 @@ $(document).ready(function () {
         imgNavList[i].addEventListener("mouseover", function() {
             var atr = this.getAttribute("data-src");
             this.parentNode.parentNode.parentNode.querySelector("figure .img-photo-slider div img").src = atr;
+            //this.parentNode.classList.add('active');
         });
     }
+
+    
 
     //buttons product-nav-dots
     let colorButtonsList = document.querySelectorAll(".product-nav-dots > a");

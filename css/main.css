@@ -1267,6 +1267,10 @@ section {
     background-color: #fff;
 }
 
+.img-wrap > div.active {
+    border: 1px solid #f3963e;
+}
+
 .image-photo-slider-nav {
     display: none;
 } 
@@ -2206,6 +2210,10 @@ figure.img-block .img-photo-slider div.active {
     max-width: 180px;
     margin: auto;
 }
+
+.product-wrap .img-block .img-wrap img {
+    cursor: pointer;
+} 
 
 .product-wrap.big .img-block {
     display: flex;
