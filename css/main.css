@@ -2165,6 +2165,7 @@ label {
 }
 .product-wrap .text-block {
     position: absolute;
+    width: 100%;
     margin-top: 255px;
     top: 0;
     left: 0;
