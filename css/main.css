@@ -1288,7 +1288,9 @@ section {
     max-height: 395px;
 }
 
-
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label {
+    color: #d1d1d1;
+}
 
 
 .product-wrap .text-block p {
@@ -1308,6 +1310,7 @@ section {
     text-align: left;
     padding-bottom: 3%;
     display: block;
+    cursor: pointer;
 }
 
 .product-wrap .text-block a:hover,
@@ -2291,11 +2294,11 @@ figure.img-block .img-photo-slider div.active {
 .product-details .size-wrap a.disable {
     color:#adb5bd;
     border-color: #a9b2bb;
-    cursor: text;
+    cursor: default;
 }
 
 .product-nav-dots a.disable {
-    cursor: text;
+    cursor: default;
 }
 
 .product-wrap .size-wrap a.active,
@@ -2482,7 +2485,7 @@ figure.img-block .img-photo-slider div.active {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    cursor: text;
+    cursor: default;
 }
 
 .size-wrap a.disable:after,
@@ -2502,7 +2505,7 @@ figure.img-block .img-photo-slider div.active {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    cursor: text;
+    cursor: default;
 }
 
 /*icon livejurnal*/
@@ -2564,7 +2567,25 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     top: 20px;
 }
 
+.field-flex {
+    display: flex;
+}
 
+.field-text {
+    display: block;
+    padding: 20px 0 0 0;
+    position: relative;
+}
+
+.field-text input {
+    width: 100%;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
 
 .home-page-menu-wrap.mobile_show, 
 .filter-wrap.mobile_show {
@@ -2572,7 +2593,7 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 }
 
 #catalog-menu-mobile, .bx-filter.mobile {
-    margin-top: 4rem;
+    margin: 4rem 0 6rem 0;
 }
 
 .nav-tabs {
