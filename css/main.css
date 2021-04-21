@@ -2250,8 +2250,8 @@ figure.img-block .img-photo-slider div.active {
     height: 1.3rem;
     border-radius: 50%;
     border: .15rem solid #d6d3d3;
-    margin-right: .25rem;
-    margin-left: .25rem;
+    margin-right: .15rem;
+    margin-left: 0.55rem;
     transition: box-shadow .35s ease;
     background-repeat: no-repeat;
     background-position: center center;
