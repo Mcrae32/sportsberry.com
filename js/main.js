@@ -65,6 +65,9 @@ $(document).ready(function () {
     checkWidth()
     */
 
+    //sorting catalog
+    
+    
 
     //hover card assortment
     $(function () {
