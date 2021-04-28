@@ -1,0 +1,41 @@
+.js-search-result-panel{
+    max-height: 400px;
+    background-color: white;
+    overflow-y: auto;
+    top: 42px;
+    position: absolute;
+    z-index: 1000;
+    padding: 15px 30px 0;
+    width: 88%;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+    left: 7%;
+}
+
+.js-search-result-panel .row{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d0c6c6;
+  padding-bottom: 10px;
+}
+
+.js-search-result-panel .row > .col-2 {
+    padding: 0;
+}
+
+.js-search-result-panel .row > .col {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #323232;
+}
+
+.js-search-result-panel a {
+    color: #323232;
+}
+
+.js-search-result-panel a:hover,
+.js-search-result-panel a:focus {
+    color: #f3963e;
+}
+
+.js-search-result-panel .row:last-child {
+    border-bottom:none;
+}

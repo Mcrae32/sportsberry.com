@@ -3139,6 +3139,10 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         right: 1rem;
     }
 
+    .header-search .header-search-wrapper {
+        min-width: 190px;
+    }
+
     .parthners {
         margin-top: 0rem;
     }
