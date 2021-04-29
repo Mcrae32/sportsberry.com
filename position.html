@@ -269,7 +269,76 @@
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
-                                        <a class="scrollMore" data-toggle="tab" href="#characteristics">(11 отзывов)</a>
+                                        <a class="scrollMore" data-toggle="tab" href="#characteristics">(11 отзывов)</a><a class="btn" data-toggle="modal" data-target="#myModal1">оставить отзыв<i class="fa fa-commenting-o"></i></a>
+                                    </div>
+                                    <!--modal popup form-->
+                                    <div class="modal fade" id="myModal1" style="display: none;" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="filter-content">
+                                                <div class="hidden-xs hidden-sm">
+                                                    <div class="col-md-12">
+                                                        <div class="modal-header">
+                                                            <h5>Ваш отзыв</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">																
+                                                                <form class="form-horizontal">
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-12 control-label">
+                                                                            <label for="heading" class="control-label">Заголовок</label>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <input type="text" class="form-control" id="heading" name="heading" placeholder="Заголовок">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-12 control-label">
+                                                                            <label for="reviews" class="control-label">Добавьте пояснение</label>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <textarea type="text" class="form-control" id="reviews" placeholder="Добавьте пояснение"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-12 control-label">
+                                                                            <label for="reviews" class="control-label">Ваша оценка:</label>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="rating-wrap">
+                                                                                <div class="rating">
+
+                                                                                    <input type="radio" id="star-5" name="rating" value="5">
+                                                                                    <label for="star-5" title="Оценка «5»"></label>
+                                                                                  
+                                                                                    <input type="radio" id="star-4" name="rating" value="4">
+                                                                                    <label for="star-4" title="Оценка «4»"></label>
+                                                                                  
+                                                                                    <input type="radio" id="star-3" name="rating" value="3">
+                                                                                    <label for="star-3" title="Оценка «3»"></label>
+                                                                                  
+                                                                                    <input type="radio" id="star-2" name="rating" value="2">
+                                                                                    <label for="star-2" title="Оценка «2»"></label>
+                                                                                  
+                                                                                    <input type="radio" id="star-1" name="rating" value="1">
+                                                                                    <label for="star-1" title="Оценка «1»"></label>
+                                                                                  
+                                                                                  </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-offset-4 col-sm-6 button-wrap">
+                                                                            <button type="button" class="btn btn-outline-dark">Опубликовать</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>																
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="product-nav product-nav-dots">
                                         <span>Цвета:</span>
@@ -544,6 +613,7 @@
                     </div>
                 </div>
             </section>
+            
         </main>   
         <footer>
             <div class="wrapper">

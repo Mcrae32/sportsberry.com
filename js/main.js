@@ -65,7 +65,8 @@ $(document).ready(function () {
     checkWidth()
     */
 
-    //sorting catalog
+    //rating star
+    
     
     
 
