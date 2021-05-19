@@ -98,6 +98,11 @@ a:active {
     color: #fff;
 }
 
+.filter-wrap a:hover,
+.filter-wrap a:focus {
+    color: #f3963e;
+}
+
 a, header, .leader-position, .product-wrap {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1965,7 +1970,7 @@ label {
     display: none;
     right: -0.1rem;
     margin-top: -.7rem;
-    z-index: 0;
+    z-index: -1;
     width: 1rem;
     height: 1rem;
 }
@@ -2299,7 +2304,7 @@ figure.img-block .img-photo-slider div.active {
 .product-nav-dots a.active, 
 .product-nav-dots a:hover, 
 .product-nav-dots a:focus {
-    box-shadow: 0 0 0 0.1rem #212529;
+    box-shadow: 0 0 0 2px #212529;
 }
 
 .product-nav-dots a.disable.active, 
