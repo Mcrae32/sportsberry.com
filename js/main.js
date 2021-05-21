@@ -209,9 +209,9 @@ $(document).ready(function () {
 
     /*superfish menu active*/
     // initialise plugin
-    var menu = $('.menu').superfish({
-        //add options here if required
-    });
+    // var menu = $('.menu').superfish({
+    //     //add options here if required
+    // });
 
     // Mobile Menu Toggle - Show & Hide
     $('.mobile-menu-toggler').on('click', function (e) {

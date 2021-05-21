@@ -1,0 +1,111 @@
+.catalog-menu{
+
+}
+
+.catalog-menu>li{
+  float: left;
+  line-height: 40px;
+  margin: 0 13px;float: left;
+}
+
+.catalog-sub-menu{
+  visibility: hidden;
+  position: absolute;
+  background: white;
+  width: 100%;
+  right: 0px;
+  padding: 0 20%;
+  opacity:0;
+  transition: 0.5s;
+}
+
+.catalog-menu>li:hover .catalog-sub-menu{
+  visibility:visible;
+  opacity:1;
+  transition: 0.5s;
+}
+
+.catalog-sub-menu>ul>li{
+  float: left;
+  padding: 10px;
+  width: 25%;
+}
+
+.catalog-sub-menu>ul>li>ul>li{
+  padding-left: 10px;
+}
+/*
+.js-colors{}
+.js-colors a{}
+
+.js-sizes{}
+.js-sizes a{
+    margin-left: 5px;
+    padding: 2px 1px 1px;
+    border: 1px solid #323232;
+    background-color: #f7f7f7;
+    color: #323232;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.js-sizes a.active{
+    background-color: #323232;
+    color: #fff;
+}
+
+
+.modal-mask {
+position: fixed;
+z-index: 9998;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: table;
+transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+display: table-cell;
+vertical-align: middle;
+}
+
+.modal-container {
+max-width: 500px;
+margin: 0px auto;
+padding: 10px 20px;
+background-color: #fff;
+border-radius: 2px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+transition: all 0.3s ease;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+margin-top: 0;
+color: #42b983;
+}
+
+.modal-body {
+margin: 20px 0;
+}
+
+.modal-default-button {
+float: right;
+}
+*/
+.modal-enter {
+opacity: 0;
+}
+
+.modal-leave-active {
+opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+  
