@@ -1779,19 +1779,22 @@ button:focus {
     visibility: hidden;
     opacity:0;
     display: none;
-    /* transition: transform .1s ease,
+    /*transition: transform .1s ease,
                 opacity 0ms linear .1s,
                 visibility 0ms linear .1s;
-    transform-origin: top center;
-    transform: scaleY(0); */
+     transform-origin: top center;
+    transform: scaleY(0);  */
+    transition: all 1.35s;
     position: absolute;
     left: 0%;
     top: 100%;
     width: 100%;
     background: white;
-    padding: 2% 10%;
-    transition: 0.5s;
+    padding: 2% 10% 0;
+    transition: all 1.5s;
     box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+    overflow: scroll;
+    max-height: 550px;
 }
 
 .catalog-menu>li:hover .catalog-sub-menu{
@@ -1812,6 +1815,10 @@ button:focus {
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
     column-gap: 32px;
+}
+
+.catalog-sub-menu > ul {
+    padding-bottom: 2%;
 }
 
 .catalog-sub-menu ul li {
@@ -1839,6 +1846,7 @@ button:focus {
 .catalog-sub-menu ul li ul li a:hover,
 .catalog-sub-menu ul li ul li a:focus {
     color: #212529;
+    text-decoration:underline;
 }
 
 .catalog-sub-menu ul li ul {
