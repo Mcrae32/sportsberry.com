@@ -701,8 +701,8 @@ section {
 
 .text-wrap-slide {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     margin-top: 20px;
 }
 
@@ -719,7 +719,8 @@ section {
 }
 
 .text-wrap-slide div p {
-    margin-top: 7px;
+    margin-top: 0px;
+    margin-bottom: 0.7rem;
     font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
@@ -729,7 +730,7 @@ section {
     color: #959595;
 }
 
-.text-wrap-slide > p {
+.text-wrap-slide > .price-wrap p {
     font-family: "Helvetica Neue Cyr Medium", sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -2560,10 +2561,10 @@ figure.img-block .img-photo-slider div.active {
 }
 
 .product-details .rating-wrap a.btn {
-    padding: 9px 5px 10px 5px;
+    padding: 4px 1% 5px 1%;
     margin-left: 10px;
     letter-spacing: 0;
-    line-height: 0;
+    line-height: 0.9;
     display: flex;
     align-items: center;
     background-color: #f3963e;
@@ -2607,37 +2608,54 @@ figure.img-block .img-photo-slider div.active {
 
 }
 
-.text-block .price-wrap {
+.price-wrap {
     display: flex;
     align-items: baseline;
 }
 
-.text-block .price-wrap p {
+.price-wrap p {
     font-weight: bold;
     font-size: 1.1rem;
-    margin-top: 10px;
     display: inline-block;
     margin-right: 15px;
 }
 
-.text-block .price-wrap p.new-price {
-    font-size: 1.3rem;
-    color:red;
+.product-details .price-wrap p {
+    margin-top: 10px;
 }
 
-.text-block .price-wrap p.new-price ~ p {
+.text-block .price-wrap p {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.price-wrap p.new-price {
+    font-size: 1.3rem;
+    color:red;
+    font-weight: 600;
+}
+
+.text-wrap-slide .price-wrap p.new-price {
+    font-weight: normal;
+}
+
+.text-wrap-slide .price-wrap p.new-price ~ p {
+    font-family: sans-serif;
+}
+
+.price-wrap p.new-price ~ p {
     color: #8e8e8e;
     position: relative;
     font-weight: 100;
     font-size: 0.95rem;
 }
 
-.text-block .price-wrap p.new-price ~ p::before {
+.price-wrap p.new-price ~ p::before {
     content: '';
     opacity: 1;
     position: absolute;
     top: 45%;
-    left: 36%;
+    left: 37%;
     margin-left: -25px;
     display: inline-block;
     height: 1.4px;
@@ -2649,21 +2667,17 @@ figure.img-block .img-photo-slider div.active {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     cursor: default;
-);
-
-.text-block .price-wrap p.new-price ~ p::after {
-    content: "₽";
-    padding-left: .5rem;
-}
+};
 
 .product-details .price-wrap p {
     font-weight: bold;
-    font-size: 1.3rem;
-    margin-top: 8px;
+    font-size: 1.4rem;
+    margin-top: 15px;
 }
 
-.text-block .price-wrap p::after,
-.product-details .price-wrap p::after {
+.price-wrap p::after,
+.price-wrap p::after,
+p.new-price ~ p::after  {
     content: "₽";
     padding-left: .5rem;
 }
