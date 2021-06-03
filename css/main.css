@@ -2715,12 +2715,7 @@ figure.img-block .img-photo-slider div.active {
     margin-top: 15px;
 }
 
-.price-wrap p::after,
-.price-wrap p::after,
-p.new-price ~ p::after  {
-    content: "₽";
-    padding-left: .5rem;
-}
+
 
 .rub {
     font-family: 'PT Sans', serif;
