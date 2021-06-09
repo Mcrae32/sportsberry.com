@@ -2350,7 +2350,7 @@ label {
     flex-direction: column;
     height: auto;
     margin-bottom: 35px;
-    min-height: 371px;
+    min-height: 375px;
     justify-content: flex-start;
     position: relative;
 }
@@ -2695,8 +2695,7 @@ figure.img-block .img-photo-slider div.active {
     opacity: 1;
     position: absolute;
     top: 45%;
-    left: 37%;
-    margin-left: -25px;
+    left: -5%;
     display: inline-block;
     height: 1.4px;
     width: 110%;
