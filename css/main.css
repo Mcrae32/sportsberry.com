@@ -1888,8 +1888,73 @@ button:focus {
     padding-bottom: 0;
 }
 
+/*section-catalog*/
+.section-catalog-wrap {
 
+}
 
+.section-catalog-wrap ul {
+    display: block;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+}
+
+.section-catalog-wrap ul li {
+    display: inherit;
+    margin-bottom: 5px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.section-catalog-wrap li a {
+    display: block;
+    color: #212529;
+}
+
+.section-catalog-wrap ul li a {
+    padding-bottom: 10px;
+    line-height: 1rem;
+}
+
+.section-catalog-wrap ul li > a {
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.section-catalog-wrap ul li ul li:last-child a {
+    padding-bottom: 0;
+}
+
+.section-catalog-wrap ul li ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-left: solid 1px #d3cdcd;
+}
+
+.section-catalog-wrap ul li ul li {
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+.section-catalog-wrap ul li ul li a {
+    font-weight: normal;
+    letter-spacing: normal;
+    padding-bottom: 5px;
+    color: #646464;
+}
+
+.section-catalog-wrap ul li ul li a:hover, 
+.section-catalog-wrap ul li ul li a:focus {
+    color: #212529;
+    text-decoration: underline;
+}
 
 /*catalog page*/
 header.catalog-page {
@@ -3504,6 +3569,12 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         border: solid 1px #d8d8d8;
         padding: 1rem 1rem 1rem 1rem;
     }
+
+    .section-catalog-wrap ul {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
 }
 
 @media (max-width: 768px) {
@@ -3600,6 +3671,12 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     .js-search-result-panel .row .col-sm-2 {
         padding: 0;
     }
+
+    .section-catalog-wrap ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
     
 }
 
@@ -3690,6 +3767,12 @@ footer ul.icon-wrap li:last-child a:focus img.first {
     .header-search .header-search-wrapper {
         right: -0.3rem;
         min-width: 137.1px;
+    }
+
+    .section-catalog-wrap ul {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }
 
