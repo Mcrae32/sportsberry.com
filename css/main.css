@@ -1246,6 +1246,78 @@ section {
     padding-bottom: 0;
 }
 
+.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: .5;
+    color: #fff;
+    padding: 8px 0;
+}
+
+.flag.new-item span,
+.flag.sale-item span {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 1px 5px 1px 15px;
+}
+
+.flag.new-item span:before,
+.flag.sale-item span:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #73d237;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.flag.new-item span:after,
+.flag.sale-item span:after {
+    display: block;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 100%;
+    border-top: 0px solid transparent;
+    border-left: 12px solid #73d237;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+}
+
+.flag.sale-item span:before {
+    background-color: red;
+}
+
+.flag.sale-item span:after {
+    border-left: 12px solid red;
+}
+
+.flag.sale-item span.discount {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    color: red;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    width: 100%;
+    padding: 5px;
+}
+
+.flag.sale-item span.discount::before,
+.flag.sale-item span.discount::after {
+    display: none;
+}
+
 .like-wrap {
     display: flex;
     position: absolute;
