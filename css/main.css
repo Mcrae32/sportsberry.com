@@ -1318,6 +1318,23 @@ section {
     display: none;
 }
 
+.flag_product-details {
+    position: relative;
+    padding-top: 0;
+    display: inline-block;
+}
+
+.flag.flag_product-details span:after, 
+.flag.flag_product-details span:after {
+    border-bottom: 26px solid transparent;
+}
+
+.flag.sale-item.flag_product-details span.discount{
+    display: inherit;
+    padding: 8px 0 8px 0;
+    width: max-content;
+}
+
 .like-wrap {
     display: flex;
     position: absolute;
