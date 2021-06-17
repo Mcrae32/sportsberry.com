@@ -114,7 +114,7 @@ a, header, .leader-position, .product-wrap {
 header {
     position: fixed;
     background-color: #fff;
-    z-index: 10;
+    z-index: 15;
     width: 100%;
     top: 0;
     /*padding-left: 3.15vw;
@@ -753,12 +753,13 @@ section {
 .leader-position .text-block .action .btn {
     font-size: 0.8rem;
     border-radius: 5px;
-    border: solid 2px #f3963e;
+    border: 1px solid rgb(229, 229, 229);
     color: #323232;
     letter-spacing: 0.73px;
     padding: 10px;
     font-weight: normal;
     margin-right: 10px;
+    text-transform: uppercase;
 }
 
 .product-details .btn {
@@ -791,18 +792,6 @@ section {
     margin-right: 15px;
 }
 
-.bx-filter-parameters-box-container a {
-    border: 1px solid rgb(229, 229, 229);
-    text-transform: uppercase;
-}
-
-.bx-filter-parameters-box-container a:hover,
-.bx-filter-parameters-box-container a:focus {
-    border: 1px solid rgb(229, 229, 229);
-    box-shadow: inset 0px 0px 0 1px #000;
-    background-color: #fff;
-    color: #323232;
-}
 
 .heading {
     text-align: center;
@@ -1562,6 +1551,23 @@ section.about p span {
     border: none;
     text-transform: uppercase;
 }
+
+/*btn*/
+.bx-filter-parameters-box-container a {
+    border: 1px solid rgb(229, 229, 229);
+    text-transform: uppercase;
+}
+
+.bx-filter-parameters-box-container a:hover,
+.bx-filter-parameters-box-container a:focus,
+.tab-content a.btn:hover,
+.tab-content a.btn:focus {
+    border: 1px solid rgb(229, 229, 229);
+    box-shadow: inset 0px 0px 0 1px #000;
+    background-color: #fff;
+    color: #323232;
+}
+
 
 /*footer*/
 
@@ -2501,11 +2507,6 @@ label {
     justify-content: space-around;
 }
 
-.filter-wrap a:hover, .filter-wrap a:focus {
-    color: #fff;
-    font-weight: bold;
-}
-
 .products .col-md-4 {   
     display: flex;
     align-items: baseline;
@@ -2782,6 +2783,7 @@ figure.img-block .img-photo-slider div.active {
     background-color: #f3963e;
     color: white;
     font-weight: 600;
+    text-transform: lowercase;
 }
 
 .rating-wrap a.btn:hover,
@@ -3211,6 +3213,12 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 
 .contentpaneopen {
 	margin-top: 1rem;
+}
+
+.product-details-bottom a.nav-link:hover,
+.product-details-bottom a.nav-link:focus,
+.product-details-bottom a.nav-link.active {
+    color: #323232;
 }
 
 
