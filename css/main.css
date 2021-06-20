@@ -131,7 +131,7 @@ header.sticky.scroll-down {
 
 header.sticky {
     background-color: white;
-    top: -112px;
+    top: -35px;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.55);
     -moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.55);
     box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.55);
@@ -363,8 +363,8 @@ header.sticky .header-bottom .menu.sf-menu > li > a {
 }
 
 .sticky .logo {
-    margin-top: 1.75rem;
-    margin-bottom: 1.3rem;
+    margin-top: 0.45rem;
+    margin-bottom: 0.1rem;
 }
 
 .logo img:first-child {
@@ -490,7 +490,7 @@ header.sticky .logo img:last-child {
 	font-size: 2.4rem;
 	line-height: 0;
 	min-width: 2.5rem;
-	padding: .3rem .2rem;
+	padding: .3rem .2rem 0.5rem;
 	font-weight: 400;
 	color: #333;
 	text-align: center;
@@ -559,7 +559,7 @@ i.fa.fa-heart-o.active:before {
 .header-search .header-search-wrapper {
 	position: absolute;
     right: -0.5rem;
-    top: 50%;
+    top: 60%;
     margin-top: -20px;
     display: none;
     align-items: stretch;
@@ -568,10 +568,10 @@ i.fa.fa-heart-o.active:before {
     width: 100%;
     min-width: 550px;
     background-color: #fff;
-    border: .1rem solid #d3cdcd;
+    border: 1px solid #e6e6e6;
     border-radius: 20px;
     z-index: 10;
-    box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
+    /* box-shadow: 2px 2px 6px rgb(0 0 0 / 20%); */
 }
 
 .header-search .form-control {
@@ -579,7 +579,7 @@ i.fa.fa-heart-o.active:before {
 	padding: .9rem 2rem .9rem 1.3rem;
 	width: 100%;
 	margin: 0;
-	height: 36px;
+	height: 30px;
 	line-height: 20px;
 	border: none;
 	border-radius: 20px;
@@ -587,12 +587,13 @@ i.fa.fa-heart-o.active:before {
     transition: all 0.3s;
 }
 
-.header-search .form-control, .header-search select {
+.header-search .form-control, 
+.header-search select {
 	line-height: 1;
 	font-weight: 400;
 	font-size: 1.2rem;
 	letter-spacing: 0;
-	background-color: #fff;
+	background-color: #e6e6e6;
 	margin: 0;
 }
 
@@ -3510,7 +3511,17 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         justify-content: space-between;
     }
 
-   
+    .header-top {
+        display: none;
+    }
+
+    header.sticky {
+        top: 0px;
+    }
+
+    .header-search .header-search-wrapper {
+        min-width: 365px;
+    }
 
     /* .slider-wrapper.position .slider {
         margin-top: 77px;
