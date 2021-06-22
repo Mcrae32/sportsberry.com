@@ -45,14 +45,12 @@
                 </div>
                 <div class="header-right">
                     <div class="header-search">
-                        <a href="#" class="search-toggle" role="button" title="Поиск">
-                            <i class="fa fa-search"></i>
-                        </a>
-                        <form>
-                            <div class="header-search-wrapper show">
-                                <label for="q" class="sr-only">Поиск</label>
-                                <input type="search" class="form-control" name="q" id="q" placeholder="Поиск"
-                                    required="">
+                        <form action="/search/"><button type="submit" class="search-toggle"><i
+                                    class="fa fa-search"></i></button>
+                            <div class="header-search-wrapper show"><label for="q" class="sr-only">Поиск</label> <input
+                                    autocomplete="off" type="text" name="q" aria-label="" placeholder="Поиск.."
+                                    class="form-control">
+                                <!---->
                             </div>
                         </form>
                     </div>
@@ -68,7 +66,7 @@
                     </div> -->
                     <div>
                         <a href="#" class="bag" role="button" title="Поиск">
-                            <i class="fa fa-shopping-bag"></i><span>1</span>
+                            <i class="fa icon-shopping-cart-active"></i><span>1</span>
                         </a>
                     </div>
                     <button class="mobile-menu-toggler">
