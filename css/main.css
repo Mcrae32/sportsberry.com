@@ -2279,16 +2279,23 @@ label {
     border:none;
     box-shadow: 2px 2px 6px rgb(0 0 0 / 20%);
 }
-
-.sort__split a {
+.modern-page-navigation a,
+.sort__split a,
+.modern-page-navigation span.modern-page-first {
+    color: #323232;
     padding: 0 0.6em 0 .3em;
     border-right:1px solid #d3cdcd;
 }
 
-.sort__split a:last-child {
+.sort__split a:last-child,
+.modern-page-navigation a.modern-page-next {
     border-right: none;
 }
-
+.sort a:hover,
+.sort a:focus,
+.sort a.active,
+.sort__split a:hover,
+.sort__split a:focus,
 .sort__split a.active {
     color:#999;
     cursor: default;
@@ -2513,10 +2520,14 @@ label {
     border-color: #f3963e;
 }
 
+.bottom-paginator{
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem 0 1rem; 
+}
 .toolbox {
     display: flex;
     align-items: left;
-    margin: 7rem 0 1rem;
 }
 
 .toolbox.sort {
@@ -2525,9 +2536,23 @@ label {
 }
 
 .toolbox a {
-    color: #646464;
-    text-decoration: underline;
-    padding: 0.5rem 0 1rem 0;
+    color: #323232;
+}
+
+.toolbox a:hover,
+.toolbox a:focus,
+.toolbox a.active {
+    color: #999;
+}
+
+div.modern-page-navigation a, 
+div.modern-page-navigation a.modern-page-previous, span.modern-page-dots {
+    color: #323232;
+}
+
+span.modern-page-current,
+.modern-page-navigation span.modern-page-first.modern-page-current {
+    color: #999;
 }
 
 .toolbox .pagination li {
