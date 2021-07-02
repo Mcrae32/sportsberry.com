@@ -2281,7 +2281,8 @@ label {
 }
 .modern-page-navigation a,
 .sort__split a,
-.modern-page-navigation span.modern-page-first {
+.modern-page-navigation span.modern-page-first,
+span.modern-page-current {
     color: #323232;
     padding: 0 0.6em 0 .3em;
     border-right:1px solid #d3cdcd;
@@ -2297,8 +2298,8 @@ label {
 .sort__split a:hover,
 .sort__split a:focus,
 .sort__split a.active {
-    color:#999;
-    cursor: default;
+    color: #f3963e;
+    cursor: pointer;
 }
 
 .filter-items-count .filter-item {
@@ -2526,8 +2527,7 @@ label {
     margin: 7rem 0 1rem; 
 }
 .toolbox {
-    display: flex;
-    align-items: left;
+    margin-right: 1rem;
 }
 
 .toolbox.sort {
@@ -2541,8 +2541,10 @@ label {
 
 .toolbox a:hover,
 .toolbox a:focus,
-.toolbox a.active {
-    color: #999;
+.toolbox a.active,
+a.modern-page-previous:hover,
+a.modern-page-previous:active {
+    color: #f3963e;
 }
 
 div.modern-page-navigation a, 
@@ -2552,7 +2554,7 @@ div.modern-page-navigation a.modern-page-previous, span.modern-page-dots {
 
 span.modern-page-current,
 .modern-page-navigation span.modern-page-first.modern-page-current {
-    color: #999;
+    color: #f3963e;
 }
 
 .toolbox .pagination li {
@@ -3952,8 +3954,36 @@ footer ul.icon-wrap li:last-child a:focus img.first {
         flex-direction: column;
     }
 
-    .sort__split {
+    .sort__split,
+    .toolbox {
         margin-top: 5px;
+    }
+
+    .bottom-paginator {
+        flex-direction: column-reverse;
+    }
+
+    .bottom-paginator .sort__split {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .toolbox {
+        margin-right: 0;
+    }
+
+    span.modern-page-title,
+    .sort__split span {
+        display: block;
+    }
+
+    .modern-page-previous,
+    .modern-page-next {
+        display: none;
+    }
+
+    .modern-page-navigation a:nth-last-child(2) {
+        border-right: none;
     }
 }
 
