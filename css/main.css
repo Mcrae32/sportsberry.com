@@ -1390,11 +1390,6 @@ section {
     display: block;
 }
 
-.like-wrap a:hover i,
-.like-wrap a:focus i {
-    color: #f3963e;
-}
-
 .img-wrap {
     display: flex;
     flex-direction: column;

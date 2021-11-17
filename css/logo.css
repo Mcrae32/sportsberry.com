@@ -1,0 +1,8 @@
+.logo img:last-child {
+    max-height: 60px;
+}
+
+.header-right > div {
+    display: flex;
+    align-items:  center;
+}
