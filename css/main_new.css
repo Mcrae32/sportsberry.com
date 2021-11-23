@@ -1,0 +1,15 @@
+.search-page .search-page__wrap {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-form .search-form__item {
+  padding: 0 15px;
+}
+/*# sourceMappingURL=main_new.css.map */

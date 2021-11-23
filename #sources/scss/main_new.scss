@@ -1,0 +1,14 @@
+// @import "_nullstyle.scss";
+.search-page {
+    .search-page__wrap {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}
+
+.search-form {
+    display: flex;
+    .search-form__item {
+        padding: 0 15px;
+    }
+}
