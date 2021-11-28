@@ -79,10 +79,10 @@ $(document).ready(function () {
         $(this).find('h3').addClass('hide');
         $(this).find('.like-wrap').removeClass('hide');
         $(this).find('.img-wrap').removeClass('hide');
-        $(this).find('.rating-wrap').removeClass('hide');
-        $(this).find('.product-nav').removeClass('hide');
-        $(this).find('.size-wrap').removeClass('hide');
-        $(this).find('.buttons-wrap').removeClass('hide');
+        // $(this).find('.rating-wrap').removeClass('hide');
+        // $(this).find('.product-nav').removeClass('hide');
+        // $(this).find('.size-wrap').removeClass('hide');
+        // $(this).find('.buttons-wrap').removeClass('hide');
         $(this).find('.button-wrap').removeClass('hide');
     };
     function onOut() {
@@ -90,10 +90,10 @@ $(document).ready(function () {
         $(this).find('.like-wrap').addClass('hide');
         $(this).find('.nohide').removeClass('hide');
         $(this).find('.img-wrap').addClass('hide');
-        $(this).find('.rating-wrap').addClass('hide');
-        $(this).find('.product-nav').addClass('hide');
-        $(this).find('.size-wrap').addClass('hide');
-        $(this).find('.buttons-wrap').addClass('hide');
+        // $(this).find('.rating-wrap').addClass('hide');
+        // $(this).find('.product-nav').addClass('hide');
+        // $(this).find('.size-wrap').addClass('hide');
+        // $(this).find('.buttons-wrap').addClass('hide');
         $(this).find('.button-wrap').addClass('hide');
     };
 
