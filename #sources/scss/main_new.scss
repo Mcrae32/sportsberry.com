@@ -1,8 +1,13 @@
 // @import "_nullstyle.scss";
+//tpl-s
+%tpl_page_wrap {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
 .search-page {
     .search-page__wrap {
-        padding-top: 40px;
-        padding-bottom: 50px;
+        @extend %tpl_page_wrap;
     }
 }
 
@@ -55,4 +60,10 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     text-transform: uppercase;
     
+}
+
+.content-page {
+    .content-wrap {
+        @extend %tpl_page_wrap;
+    }
 }

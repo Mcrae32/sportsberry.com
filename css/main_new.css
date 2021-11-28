@@ -1,4 +1,4 @@
-.search-page .search-page__wrap {
+.search-page .search-page__wrap, .content-page .content-wrap {
   padding-top: 40px;
   padding-bottom: 50px;
 }
