@@ -803,7 +803,7 @@ section {
 .product-wrap .text-block .action .btn,
 .leader-position .text-block .action .btn {
     font-size: 0.8rem;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid rgb(229, 229, 229);
     color: #323232;
     letter-spacing: 0.73px;
@@ -1538,6 +1538,9 @@ section {
 
 .product-wrap .text-block a.btn:hover,
 .product-wrap .text-block a.btn:focus,
+.product-wrap .text-block a.btn.basket:hover,
+.product-wrap .text-block a.btn.basket:focus,
+.product-wrap .text-block a.btn.basket:active,
 .product-wrap .text-block a.btn.basket.active,
 .product-details .buttons-wrap a.btn:hover,
 .product-details .buttons-wrap a.btn:focus,
@@ -1547,8 +1550,6 @@ section {
     border-color: #f3963e;
 }
 
-.product-wrap .text-block a.btn.basket:hover,
-.product-wrap .text-block a.btn.basket:focus,
 .product-details .buttons-wrap a.btn.basket:hover,
 .product-details .buttons-wrap a.btn.basket:focus {
     border-color: #000;
@@ -2839,8 +2840,12 @@ figure.img-block .img-photo-slider div.active {
 .buttons-wrap a.btn:hover,
 .buttons-wrap a.btn:focus,
 .buttons-wrap a.btn:active,
-.buttons-wrap a.btn.active {
+.buttons-wrap a.btn.active,
+.buttons-wrap a.btn.active:hover,
+.buttons-wrap a.btn.active:focus,
+.buttons-wrap a.btn.active:active {
     background-color: #f3963e;
+    border: 1px solid #f3963e;
     color: white;
 }
 
@@ -2858,8 +2863,8 @@ figure.img-block .img-photo-slider div.active {
 
 .buttons-wrap a.basket:hover,
 .buttons-wrap a.basket:focus {
-    background: #444;
-    border-color: #444;
+    background: #f3963e;
+    border-color: #f3963e;
 }
 
 .button-wrap a.btn {
