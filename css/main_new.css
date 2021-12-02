@@ -70,13 +70,12 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   text-transform: uppercase;
 }
-<<<<<<< HEAD
 
 @media (max-width: 575px) {
   #modalCart .modal-header {
@@ -98,6 +97,8 @@
 }
 
 #modalCart .modal-body__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,8 +116,12 @@
 }
 
 #modalCart .modal-body__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 15px;
 }
 
@@ -134,6 +139,7 @@
   #modalCart .modal-body__text h4 {
     font-size: 0.8rem;
     margin-bottom: 0;
+    line-height: 0.9;
   }
 }
 
@@ -146,7 +152,9 @@
 
 #modalCart .modal-footer .buttons-wrap {
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 575px) {
@@ -156,13 +164,16 @@
 }
 
 @media (max-width: 575px) {
+  #modalCart .modal-footer .buttons-wrap .btn {
+    display: none;
+  }
   #modalCart .modal-footer .buttons-wrap .btn.basket {
-    padding: 5px;
+    display: block;
+    padding: 7px 0 5px;
     color: #323232;
     background-color: #fff;
     width: 90%;
+    line-height: 1;
   }
 }
-=======
 /*# sourceMappingURL=main_new.css.map */
->>>>>>> d4eefb64452846b31abdcb8dde79defba7dab346

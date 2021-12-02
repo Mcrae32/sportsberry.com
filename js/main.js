@@ -359,5 +359,16 @@ $(document).ready(function () {
 //     });
 // });
 
+// убрать попап через 3 секунды
+let bottonCart = document.getElementById('modalCart');
+bottonCart.addEventListener('click', function () {
+    window.setInterval(function () {
+        if ($('body').hasClass('modal-open')) {
+            $('#modalCart').modal('hide');
+        }
+    }, 3000);
+
+});
+
 
 
