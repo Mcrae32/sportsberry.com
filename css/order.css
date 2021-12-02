@@ -1,0 +1,20 @@
+.btn.btn-primary.btn-order-save,
+.pull-right.btn.btn-primary,
+.btn.btn-primary.d-none.d-sm-inline-block {
+    background: #323232;
+    color: #fff;
+    border-color: #323232;
+}
+
+.btn.btn-primary.btn-order-save:hover,
+.btn.btn-primary.btn-order-save:focus,
+.btn.btn-primary.btn-order-save:active,
+.pull-right.btn.btn-primary:hover,
+.pull-right.btn.btn-primary:focus,
+.pull-right.btn.btn-primary:active,
+.btn.btn-primary.d-none.d-sm-inline-block:hover,
+.btn.btn-primary.d-none.d-sm-inline-block:focus,
+.btn.btn-primary.d-none.d-sm-inline-block:active {
+    background: #f3963e;
+    border-color: #f3963e;
+}

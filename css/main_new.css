@@ -4,24 +4,35 @@
 }
 
 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 400px) {
   .search-form {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .search-form .search-form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 15px;
   margin-bottom: 15px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .search-form .search-form__item.search-form__item_input {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   max-width: 500px;
 }
 
@@ -46,7 +57,8 @@
 
 .search-form .search-form__button:hover {
   border: 1px solid #e5e5e5;
-  box-shadow: inset 0px 0px 0 1px #000;
+  -webkit-box-shadow: inset 0px 0px 0 1px #000;
+          box-shadow: inset 0px 0px 0 1px #000;
   background-color: #fff;
   color: #323232;
 }
@@ -54,10 +66,17 @@
 .button {
   display: inline-block;
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 
 @media (max-width: 575px) {
   #modalCart .modal-header {
@@ -144,3 +163,6 @@
     width: 90%;
   }
 }
+=======
+/*# sourceMappingURL=main_new.css.map */
+>>>>>>> d4eefb64452846b31abdcb8dde79defba7dab346
