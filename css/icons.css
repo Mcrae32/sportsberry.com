@@ -24,14 +24,83 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  .icon-cart.active:before {
+
+  .icon-gandball:before {
+    content: "\e906";
+  }
+  .icon-am_football:before {
+    content: "\e8da5";
+  }
+  .icon-badminton:before {
+    content: "\e5901";
+  }
+  .icon-basketball:before {
+    content: "\e5902";
+  }
+  .icon-big_tennis:before {
+    content: "\e5903";
+  }
+  .icon-box:before {
+    content: "\e5904";
+  }
+  .icon-fitnes:before {
+    content: "\e58f0";
+  }
+  .icon-football:before {
+    content: "\e5906";
+  }
+  .icon-golf:before {
+    content: "\e92b";
+  }
+  .icon-hand:before {
+    content: "\e92c";
+  }
+  .icon-hockey:before {
+    content: "\e92d";
+  }
+  .icon-manometr:before {
+    content: "\e92e";
+  }
+  .icon-medal:before {
+    content: "\e92f";
+  }
+  .icon-net:before {
+    content: "\e930";
+  }
+  .icon-pump:before {
+    content: "\e931";
+  }
+  .icon-second:before {
+    content: "\e932";
+  }
+  .icon-shildren_ball:before {
+    content: "\e933";
+  }
+  .icon-sport_botle:before {
+    content: "\e934";
+  }
+  .icon-sud:before {
+    content: "\e935";
+  }
+  .icon-table_tennis:before {
+    content: "\e936";
+  }
+  .icon-volleyball:before {
+    content: "\e937";
+  }
+  .icon-water_polo:before {
+    content: "\e938";
+  }
+  .icon-water:before {
+    content: "\e939";
+  }
+  .icon-cart-active:before {
     content: "\e900";
   }
   .icon-cart:before {
     content: "\e901";
   }
-  .icon-heart.active:before {
+  .icon-heart-active:before {
     content: "\e902";
   }
   .icon-heart:before {
