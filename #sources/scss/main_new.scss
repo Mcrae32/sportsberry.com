@@ -144,3 +144,36 @@
         }
     }
 }
+
+//form number of goods in cart
+.number-of-goods {
+    display: flex;
+    .number {
+        display: flex;
+        overflow: hidden;
+        border: 1px solid #999999;
+        justify-content: center;
+        position: relative;
+        top: -5px;
+        border-radius: 25px;
+        & a:last-child {
+            border-right: none;
+            border-left: 1px solid #999999;
+        }
+        .number__text {
+            border: none;
+            width: 35px;
+            text-align: center;
+        }
+    }
+    label {
+        margin-right: 10px;
+    }
+    a {
+        border-right: 1px solid #999999;
+        padding: 0px 10px 0px;
+        font-size: 1.2rem;
+        color: #000;
+        background: #f2f6f6;
+    }
+}
