@@ -359,26 +359,6 @@ $(document).ready(function () {
 //     });
 // });
 
-// убрать попап через 3 секунды
-// let bottonCart = document.getElementById('modalCart');
-// bottonCart.addEventListener('click', function () {
-//     window.setInterval(function () {
-//         if ($('body').hasClass('modal-open')) {
-//             $('#modalCart').modal('hide');
-//         }
-//     }, 2000);
-
-// });
-
-let bottonCart = document.getElementById('modalCart');
-bottonCart.addEventListener('click', function () {
-    if ($('body').hasClass('modal-open')) {
-        window.setInterval(function () {
-            $('#modalCart').modal('hide');
-        }, 3000);
-    }
-});
-
 //form number of goods in cart
 $(document).ready(function () {
     $('body').on('click', '.number-minus, .number-plus', function () {
@@ -413,5 +393,16 @@ $(document).ready(function () {
         $input.val(val);
     });
 });
+
+let bottonCart = document.getElementById('modalCart');
+bottonCart.addEventListener('click', function () {
+    if ($('body').hasClass('modal-open')) {
+        window.setInterval(function () {
+            $('#modalCart').modal('hide');
+        }, 3000);
+    }
+});
+
+
 
 
