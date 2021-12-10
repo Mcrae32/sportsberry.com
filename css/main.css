@@ -1881,8 +1881,15 @@ footer ul.assortment li {
 }
 
 .mobile-menu li ul li a {
+    display: flex;
+    align-items: flex-start;
     padding: 0.6rem 4.5rem 0.6rem 2rem;
     border: none;
+}
+
+.mobile-menu li ul li a i:first-child {
+    margin-right: 7px;
+    font-size: 1rem;
 }
 
 .mobile-menu li ul li ul li a {
@@ -1949,7 +1956,7 @@ button:focus {
 .catalog-menu li a i.fa {
     display: inline-block;
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-right: 5px;
     margin-left: 0px;
 }
@@ -3816,7 +3823,7 @@ footer ul.icon-wrap li:last-child a:focus img.first {
 
 @media (max-width: 768px) {
     .page-header h1 {
-        font-size: 2rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 
