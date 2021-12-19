@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="73px" height="63px" viewBox="0 0 73 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>profils</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cart" transform="translate(-1058.000000, -278.000000)">
+            <g id="cart-items" transform="translate(443.780000, 235.000000)">
+                <g id="profils" transform="translate(570.000000, 0.000000)" filter="url(#filter-1)">
+                    <g transform="translate(44.220000, 43.000000)">
+                        <g id="Слой_1" transform="translate(2.000000, 2.000000)"></g>
+                        <g id="Слой_28" transform="translate(4.000000, 7.000000)" fill="#000000" fill-rule="nonzero">
+                            <rect id="Rectangle" x="0" y="0" width="65" height="10.6796117"></rect>
+                            <rect id="Rectangle" x="0" y="19.4174757" width="46.1132075" height="10.6796117"></rect>
+                            <rect id="Rectangle" x="0" y="39.3203883" width="26.7358491" height="10.6796117"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

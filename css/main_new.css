@@ -163,6 +163,7 @@
   position: relative;
   top: -5px;
   border-radius: 25px;
+  max-height: 35px;
 }
 
 .number-of-goods .number a:last-child {

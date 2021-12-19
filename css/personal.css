@@ -1,0 +1,105 @@
+.sale-personal-section-index-block {
+    min-height: 207px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #323232;  
+    margin-bottom: 28px;
+}
+
+.sale-personal-section-index-block a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 36px 47px;
+}
+
+.sale-personal-section-index-block a img {
+    margin-bottom: 18px;
+}
+
+.sale-personal-section-index-block a h2 {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.99px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.sale-personal-section-index-block:hover, .sale-personal-section-index-block a:hover,
+.sale-personal-section-index-block:focus, .sale-personal-section-index-block a:focus,
+.sale-personal-section-index-block:active, .sale-personal-section-index-block a:active {
+    background-color: #f3963e;
+}
+
+.left-menu.personal-page {
+    line-height: 2rem;
+}
+
+.left-menu.personal-page li {
+    height: 44px;
+}
+
+.left-menu.personal-page li a {
+    position: relative;
+    display: inline-block;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    width: 195px;
+    margin: 0 0 12px;
+    padding: 5px 6px 5px 18px;
+    color: #323232;    
+    border-radius: 0 22px 22px 0;
+}
+
+.left-menu.personal-page li a.selected,
+.left-menu.personal-page li a:hover,
+.left-menu.personal-page li a:focus,
+.left-menu.personal-page li a:active {
+    background-color: #f2f6f6;
+}
+
+.left-menu.personal-page li a img {
+    display: inline-block;
+    margin-right: 13px;
+    position: relative;
+    bottom: 1px;
+}
+
+.left-menu.personal-page li a i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.left-menu.personal-page li a.selected i,
+.left-menu.personal-page li a:hover i,
+.left-menu.personal-page li a:focus i,
+.left-menu.personal-page li a:active i {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .left-menu.personal-page li a {
+        width: 100%;
+        margin: 0 0 12px;
+        padding: 5px 6px 5px 0px;
+        border-radius: 22px;
+        text-align: center;
+    }
+
+    .left-menu.personal-page li a.selected i,
+    .left-menu.personal-page li a:hover i,
+    .left-menu.personal-page li a:focus i,
+    .left-menu.personal-page li a:active i {
+        opacity: 0;
+    }
+}
