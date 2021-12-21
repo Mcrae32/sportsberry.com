@@ -6,7 +6,7 @@
     min-height: 207px;
     overflow: hidden;
     border-radius: 8px;
-    background-color: #323232;  
+    background-color: #323232;
     margin-bottom: 28px;
 }
 
@@ -35,9 +35,12 @@
     color: #fff;
 }
 
-.sale-personal-section-index-block:hover, .sale-personal-section-index-block a:hover,
-.sale-personal-section-index-block:focus, .sale-personal-section-index-block a:focus,
-.sale-personal-section-index-block:active, .sale-personal-section-index-block a:active {
+.sale-personal-section-index-block:hover,
+.sale-personal-section-index-block a:hover,
+.sale-personal-section-index-block:focus,
+.sale-personal-section-index-block a:focus,
+.sale-personal-section-index-block:active,
+.sale-personal-section-index-block a:active {
     background-color: #f3963e;
 }
 
@@ -57,7 +60,7 @@
     width: 195px;
     margin: 0 0 12px;
     padding: 5px 6px 5px 18px;
-    color: #323232;    
+    color: #323232;
     border-radius: 0 22px 22px 0;
 }
 
@@ -89,6 +92,7 @@
 .left-menu.personal-page li a:focus i,
 .left-menu.personal-page li a:active i {
     opacity: 1;
+    /*opacity: 1;*/
 }
 
 @media (max-width: 767px) {
@@ -106,4 +110,21 @@
     .left-menu.personal-page li a:active i {
         opacity: 0;
     }
+}
+
+.btn-primary,
+.sale-order-list-button-container .btn-primary {
+    color: #fff;
+    background-color: #323232;
+    border-color: #323232;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.sale-order-list-button-container .btn-primary:hover,
+.sale-order-list-button-container .btn-primary:focus,
+.sale-order-list-button-container .btn-primary:active {
+    background-color: #f3963e;
+    border-color: #f3963e;
 }

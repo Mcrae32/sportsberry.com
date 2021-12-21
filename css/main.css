@@ -1953,7 +1953,8 @@ button:focus {
 }
 
 /*megamenu*/
-.catalog-menu li a i.fa {
+.catalog-menu li a i.fa,
+.section-catalog-wrap ul li a i.fa {
     display: inline-block;
     display: inline-block;
     font-size: 0.8rem;
