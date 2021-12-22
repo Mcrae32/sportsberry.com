@@ -134,8 +134,6 @@ header {
     z-index: 150;
     width: 100%;
     top: 0;
-    /*padding-left: 3.15vw;
-    padding-right: 3.15vw;*/
 }
 
 header.static {
@@ -2244,7 +2242,6 @@ header.catalog-page {
 
 .breadcrumb-item.active {
     color: #323232;
-    text-transform: ;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
