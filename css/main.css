@@ -394,7 +394,7 @@ header.sticky .header-bottom .menu.sf-menu > li > a {
 }
 
 .logo img:last-child {
-    max-height: 60px;
+    max-height: 65px;
 }
 
 header.sticky .logo img:first-child {
@@ -1533,6 +1533,11 @@ section {
 
 .product-wrap .text-block a.btn.basket {
     color: #fff;
+    text-align: center;
+}
+
+.product-wrap .text-block a.btn.basket.not {
+    color: #cdcdcd;
     text-align: center;
 }
 
@@ -2885,6 +2890,14 @@ figure.img-block .img-photo-slider div.active {
 .button-wrap a.btn {
     width: 100%;
     margin-bottom: 10px;
+}
+
+/*not avaliable*/
+.buttons-wrap a.basket.not {
+    background: #fff;
+    color: #cdcdcd;
+    border: 1px solid #cdcdcd;
+    margin-right: 0;
 }
 
 .rating-wrap .btn .fa {
