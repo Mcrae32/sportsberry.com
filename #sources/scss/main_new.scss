@@ -29,24 +29,26 @@
             padding: 10px 15px;
             height: 43px;
             width: 100%;
+            border-radius: 8px;
+            border: 2px solid #a9a9a9;
+            color: #979797;
         }
     }
     .search-form__button {
         height: 43px;
-        font-weight: 400;
+        font-weight: 700;
         color: #323232;
         background-color: #fff;
-        border: 1px solid rgb(229, 229, 229);
+        border: 2px solid #646464;
         padding: 10px 15px;
         font-size: 0.8rem;
         line-height: 1.5;
-        border-radius: 0.25rem;
         letter-spacing: 1px;
+        border-radius: 50px;
         &:hover {
-            border: 1px solid rgb(229, 229, 229);
-            box-shadow: inset 0px 0px 0 1px #000;
-            background-color: #fff;
-            color: #323232;
+            border: 2px solid #f3963e;
+            background-color: #f3963e;
+            color: #fff;
         }
     }
 }
@@ -176,7 +178,5 @@
         font-size: 1.2rem;
         color: #000;
         background: #f2f6f6;
-        
     }
 }
-
