@@ -153,3 +153,73 @@ padding-left: 10px;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/*** 31-01-23 ***/
+.special-offer-slider .slick-prev {
+  background: url(../images/arrow-slider-prev.png) no-repeat center center;
+  z-index: 1;
+  top: calc(50% - 10px);
+  ;
+}
+
+.special-offer-slider .slick-next {
+  background: url(../images/arrow-slider-next.png) no-repeat center center;
+  z-index: 1;
+  top: calc(50% - 10px);
+}
+
+.slider-wrapper .slick-prev,
+#sport .slick-prev,
+.special-offer-slider .slick-prev {
+  left: 2%;
+}
+
+.slider-wrapper .slick-next,
+#sport .slick-next,
+.special-offer-slider .slick-next {
+  right: 2%;
+}
+
+/* cards */
+.products .product-wrap {
+  height: 100%;
+  min-height: 435px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.product-wrap .text-block {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0px;
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+.product-wrap .text-block .price-wrap {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+}
+
+.product-nav-dots {
+  margin-left: 0px;
+  flex-wrap: wrap;
+}
+
+/* cards end */
+
+@media (max-width: 1201px) {
+  .special-offer-slider .slick-prev {
+    left: 5%;
+  }
+
+  .special-offer-slider .slick-next {
+    right: 5%;
+  }
+}

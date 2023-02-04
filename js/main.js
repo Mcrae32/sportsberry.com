@@ -182,6 +182,35 @@ $(document).ready(function () {
         arrows: true
     });
 
+    $('.special-offer-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        arrows: true,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 
     var swiper = new Swiper('.new-items-slider', {
         spaceBetween: 15,
@@ -205,6 +234,8 @@ $(document).ready(function () {
             hide: true,
         },
     });
+
+
 
 
     /*superfish menu active*/
